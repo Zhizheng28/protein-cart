@@ -2,7 +2,7 @@
 
 from pydantic import BaseModel, Field
 
-from app.catalog import MealKind
+from app.catalog import MealKind, ProteinSource
 from app.matching import CartItem
 from app.savings import FunGoal, Goal, WeekMoney
 
@@ -18,6 +18,7 @@ class MealSummary(BaseModel):
     id: str
     name: str
     kind: MealKind
+    protein_source: ProteinSource
     minutes: int
     quick: bool
     protein_g: int
@@ -67,6 +68,7 @@ class PlanResponse(BaseModel):
 class QuickMeal(BaseModel):
     id: str
     name: str
+    protein_source: ProteinSource
     minutes: int
     protein_g: int
     cost_cents: int

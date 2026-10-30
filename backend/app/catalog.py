@@ -9,6 +9,8 @@ from pydantic import BaseModel
 from app.config import DATA_DIR
 
 MealKind = Literal["breakfast", "main"]
+ProteinSource = Literal["chicken", "beef", "seafood", "pork", "eggs", "dairy"]
+Aisle = Literal["meat", "dairy", "grains", "produce", "pantry"]
 
 
 class Ingredient(BaseModel):
@@ -18,6 +20,7 @@ class Ingredient(BaseModel):
     preferred_size: str
     grams_per_serving: int
     protein_per_100g: float
+    aisle: Aisle
 
 
 class MealIngredient(BaseModel):
@@ -29,6 +32,7 @@ class Meal(BaseModel):
     id: str
     name: str
     kind: MealKind
+    protein_source: ProteinSource
     minutes: int
     quick: bool
     protein_g: int

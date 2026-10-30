@@ -36,17 +36,21 @@ export function TabBar({ current, onChange }: TabBarProps) {
               type="button"
               aria-current={active ? "page" : undefined}
               onClick={() => onChange(tab.id)}
-              className={`flex min-h-[52px] flex-col items-center justify-center gap-0.5 rounded-[10px] text-xs font-bold ${
-                active ? "bg-maize-soft text-ink" : "text-muted"
+              className={`relative flex min-h-[52px] flex-col items-center justify-center gap-0.5 rounded-[10px] text-xs font-bold ${
+                active ? "text-ink" : "text-muted hover:text-ink"
               }`}
             >
+              <span
+                aria-hidden="true"
+                className={`absolute -top-2 h-[3px] w-8 rounded-full ${active ? "bg-maize" : "bg-transparent"}`}
+              />
               <svg
                 width="22"
                 height="22"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="2"
+                strokeWidth={active ? 2.3 : 1.9}
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 aria-hidden="true"

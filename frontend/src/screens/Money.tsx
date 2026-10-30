@@ -36,6 +36,7 @@ export function Money({
   let pace = `About ${plural(weeksLeft ?? 0, "more week")} at this pace.`;
   if (reached) pace = "Goal reached. Go get that ticket.";
   else if (weeksLeft === null) pace = "Bank a week of savings to start filling this.";
+  const over = m.over_budget_cents > 0;
 
   return (
     <div className="flex flex-col gap-4">
@@ -51,19 +52,37 @@ export function Money({
         </button>
       </div>
 
-      <div className="card flex flex-col gap-1.5">
-        <span className="text-muted">
-          You save vs. {catalog.takeout_meals_per_week} takeout bowls
-        </span>
-        <span className="big text-teal">{money(m.saved_cents)}</span>
-        <span className="note">
-          That's <span className="num">{money(m.per_meal_cents)}</span> a meal instead of{" "}
-          <span className="num">{money(bowl)}</span>.
-        </span>
-      </div>
+      <section className="feature flex flex-col gap-4" aria-label="Savings this week">
+        <div className="flex flex-col gap-2">
+          <span className="eyebrow">
+            You save vs. {catalog.takeout_meals_per_week} takeout bowls
+          </span>
+          <span className="big text-teal-bright">{money(m.saved_cents)}</span>
+          <span className="on-navy-muted text-sm">
+            <span className="num text-on-navy">{money(m.per_meal_cents)}</span> a meal instead of{" "}
+            <span className="num">{money(bowl)}</span>
+          </span>
+        </div>
+        <dl className="border-navy-line grid grid-cols-3 gap-2 border-t pt-4">
+          <div className="flex flex-col gap-0.5">
+            <dt className="on-navy-muted text-xs">Groceries</dt>
+            <dd className="num font-bold">{money(m.grocery_cents)}</dd>
+          </div>
+          <div className="flex flex-col gap-0.5">
+            <dt className="on-navy-muted text-xs">{over ? "Over budget" : "Fun money"}</dt>
+            <dd className={`num font-bold ${over ? "text-warn-on-navy" : "text-maize"}`}>
+              {money(over ? m.over_budget_cents : m.fun_cents)}
+            </dd>
+          </div>
+          <div className="flex flex-col gap-0.5">
+            <dt className="on-navy-muted text-xs">Protein / day</dt>
+            <dd className="num font-bold">{plan.targetG} g</dd>
+          </div>
+        </dl>
+      </section>
 
       <Receipt
-        label="Savings versus takeout"
+        title="Takeout vs. your cart"
         lines={[
           {
             label: `${catalog.takeout_meals_per_week} burrito bowls`,
@@ -74,23 +93,12 @@ export function Money({
         total={{ label: "Saved this week", value: money(m.saved_cents), tone: "save" }}
       />
 
-      <div className="card flex flex-col gap-2.5">
+      <section className="card flex flex-col gap-3" aria-label="Savings goal">
         <div className="flex items-center justify-between gap-3">
-          <h3>Fun money left</h3>
-          <span className={`num font-bold ${m.over_budget_cents ? "text-warn" : ""}`}>
-            {m.over_budget_cents ? `Over by ${money(m.over_budget_cents)}` : money(m.fun_cents)}
-          </span>
-        </div>
-        <p className="text-muted text-sm">
-          Budget <span className="num">{money(m.budget_cents)}</span> minus groceries{" "}
-          <span className="num">{money(m.grocery_cents)}</span>.
-          {m.over_budget_cents > 0 && " Hitting your protein target costs a bit more this week."}
-        </p>
-      </div>
-
-      <div className="card flex flex-col gap-2.5">
-        <div className="flex items-center justify-between gap-3">
-          <h3>{funGoal.name}</h3>
+          <div>
+            <span className="eyebrow">Saving for</span>
+            <h3>{funGoal.name}</h3>
+          </div>
           <span className="chip chip-maize num">
             {money(bankedCents)} / {moneyShort(funGoal.cost_cents)}
           </span>
@@ -105,17 +113,18 @@ export function Money({
         <button type="button" className="btn btn-ghost" onClick={onBank}>
           Finish week {week} and bank <span className="num">{money(bankable)}</span>
         </button>
-      </div>
+      </section>
 
-      <div className="card flex items-center justify-between gap-3">
+      <section className="card flex items-center justify-between gap-3" aria-label="Protein today">
         <div>
           <h3>Protein today</h3>
           <p className="text-muted text-sm">
-            Target about <span className="num">{plan.targetG} g</span>
+            Budget <span className="num">{money(m.budget_cents)}</span> a week · target about{" "}
+            <span className="num">{plan.targetG} g</span>
           </p>
         </div>
         <span className="chip num">{todayProteinG} g planned</span>
-      </div>
+      </section>
 
       {cookedInstead > 0 && (
         <p className="note">

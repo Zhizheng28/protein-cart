@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { api } from "../api";
+import { ProteinTag } from "../components/ProteinTag";
 import { SkeletonLine } from "../components/Skeleton";
 import { money } from "../format";
 import type { QuickMeal } from "../types";
@@ -104,7 +105,10 @@ export function QuickMealSheet({
           load.meals.map((meal) => (
             <section key={meal.id} className="card flex flex-col gap-2" aria-label={meal.name}>
               <div className="flex items-center justify-between gap-3">
-                <h3>{meal.name}</h3>
+                <div className="flex min-w-0 flex-col gap-1.5">
+                  <h3>{meal.name}</h3>
+                  <ProteinTag source={meal.protein_source} />
+                </div>
                 <span className="chip num">{meal.protein_g} g</span>
               </div>
               <div className="rline">

@@ -7,17 +7,18 @@ export interface ReceiptLine {
 }
 
 interface ReceiptProps {
+  title: string;
   lines: ReceiptLine[];
   total: ReceiptLine;
-  label: string;
 }
 
 const TONE_CLASS = { save: "text-teal", warn: "text-warn" } as const;
 
 /** Money breakdown drawn as a torn-off receipt. Use for savings and cart totals only. */
-export function Receipt({ lines, total, label }: ReceiptProps) {
+export function Receipt({ title, lines, total }: ReceiptProps) {
   return (
-    <section className="receipt" aria-label={label}>
+    <section className="receipt" aria-label={title}>
+      <div className="receipt-title">{title}</div>
       {lines.map((line, i) => (
         <div key={i} className={`rline ${line.tone ? TONE_CLASS[line.tone] : ""}`}>
           <span>{line.label}</span>

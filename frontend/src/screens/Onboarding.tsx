@@ -62,18 +62,20 @@ export function Onboarding({
   }
 
   return (
-    <div className="flex flex-col gap-[22px]">
-      <div className="flex flex-col gap-2">
-        <span className="eyebrow flex items-center gap-1.5">
-          <Logo size={16} />
+    <div className="flex flex-col gap-5">
+      <header className="feature flex flex-col gap-3">
+        <span className="eyebrow flex items-center gap-2">
+          <span className="bg-maize text-navy grid h-6 w-6 place-items-center rounded-md">
+            <Logo size={14} />
+          </span>
           {brand.name}
         </span>
-        <h1>{brand.tagline}</h1>
-        <p className="text-muted">
-          Answer five quick questions. We build a week of meals, a ready grocery cart, and show what
-          you save versus takeout.
+        <h1 className="text-[28px]">{brand.tagline}</h1>
+        <p className="on-navy-muted">
+          Five quick questions. We plan a week of chicken, beef and seafood meals, fill a grocery
+          cart, and show what you save versus takeout.
         </p>
-      </div>
+      </header>
 
       <form className="card flex flex-col gap-4" onSubmit={submit} noValidate>
         <label className="field" htmlFor="weight">

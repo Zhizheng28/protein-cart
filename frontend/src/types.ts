@@ -2,11 +2,14 @@
 
 export type Goal = "gain" | "lean" | "maintain";
 export type MealKind = "breakfast" | "main";
+export type ProteinSource = "chicken" | "beef" | "seafood" | "pork" | "eggs" | "dairy";
+export type Aisle = "meat" | "dairy" | "grains" | "produce" | "pantry";
 
 export interface MealSummary {
   id: string;
   name: string;
   kind: MealKind;
+  protein_source: ProteinSource;
   minutes: number;
   quick: boolean;
   protein_g: number;
@@ -28,6 +31,7 @@ export interface Catalog {
 
 export interface CartItem {
   ingredient_id: string;
+  aisle: Aisle;
   product_name: string;
   size: string;
   grams_needed: number;
@@ -71,6 +75,7 @@ export interface PlanResponse {
 export interface QuickMeal {
   id: string;
   name: string;
+  protein_source: ProteinSource;
   minutes: number;
   protein_g: number;
   cost_cents: number;

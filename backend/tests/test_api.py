@@ -13,7 +13,7 @@ def test_health() -> None:
 
 def test_catalog() -> None:
     body = client.get("/api/catalog").json()
-    assert len(body["meals"]) == 18
+    assert len(body["meals"]) == 19
     assert body["bowl_price_cents"] == 1350
 
 
@@ -28,13 +28,13 @@ def test_plan_returns_priced_week() -> None:
 
 
 def test_evaluate_rejects_wrong_slot() -> None:
-    days = [["chicken_burrito_bowl", "tuna_melt", "beef_ragu"]] * 7
+    days = [["chicken_burrito_bowl", "tuna_melt", "beef_tacos"]] * 7
     response = client.post("/api/plan/evaluate", json={**PROFILE, "days": days})
     assert response.status_code == 422
 
 
 def test_evaluate_reprices_edit() -> None:
-    days = [["yogurt_oat_bowl", "tuna_melt", "beef_ragu"]] * 7
+    days = [["yogurt_parfait", "tuna_melt", "beef_tacos"]] * 7
     body = client.post("/api/plan/evaluate", json={**PROFILE, "days": days}).json()
     assert body["money"]["grocery_cents"] > 0
 

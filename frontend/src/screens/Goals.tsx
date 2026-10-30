@@ -51,7 +51,7 @@ export function Goals({
           <section
             key={goal.id}
             aria-label={goal.name}
-            className={`card flex flex-col gap-2 ${active ? "border-maize! border-2" : ""}`}
+            className={`card flex flex-col gap-2 ${active ? "border-maize! shadow-[inset_0_0_0_1px_var(--maize)]" : ""}`}
           >
             <div className="flex items-center justify-between gap-3">
               <h3>{goal.name}</h3>

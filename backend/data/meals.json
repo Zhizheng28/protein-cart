@@ -1,27 +1,20 @@
 [
   {
-    "id": "egg_bean_burrito",
-    "name": "Egg & bean burrito",
+    "id": "scrambled_eggs_toast",
+    "name": "Scrambled eggs on toast",
     "kind": "breakfast",
+    "protein_source": "eggs",
     "minutes": 10,
     "quick": true,
     "protein_g": 32,
     "ingredients": [
       {
         "id": "eggs",
-        "grams": 100
+        "grams": 150
       },
       {
-        "id": "black_beans",
-        "grams": 80
-      },
-      {
-        "id": "tortillas",
-        "grams": 90
-      },
-      {
-        "id": "salsa",
-        "grams": 30
+        "id": "bread",
+        "grams": 64
       },
       {
         "id": "cheese",
@@ -30,34 +23,36 @@
     ]
   },
   {
-    "id": "yogurt_oat_bowl",
-    "name": "Greek yogurt oat bowl",
+    "id": "yogurt_parfait",
+    "name": "Greek yogurt berry parfait",
     "kind": "breakfast",
+    "protein_source": "dairy",
     "minutes": 5,
     "quick": true,
-    "protein_g": 32,
+    "protein_g": 29,
     "ingredients": [
       {
         "id": "greek_yogurt",
         "grams": 250
       },
       {
-        "id": "oats",
-        "grams": 40
+        "id": "berries",
+        "grams": 80
       },
       {
-        "id": "bananas",
-        "grams": 120
+        "id": "oats",
+        "grams": 30
       }
     ]
   },
   {
-    "id": "pb_overnight_oats",
-    "name": "PB banana overnight oats",
+    "id": "pb_banana_oatmeal",
+    "name": "Peanut butter banana oatmeal",
     "kind": "breakfast",
+    "protein_source": "dairy",
     "minutes": 5,
     "quick": true,
-    "protein_g": 35,
+    "protein_g": 25,
     "ingredients": [
       {
         "id": "oats",
@@ -74,72 +69,44 @@
       {
         "id": "bananas",
         "grams": 120
-      },
-      {
-        "id": "greek_yogurt",
-        "grams": 100
       }
     ]
   },
   {
-    "id": "egg_white_scramble",
-    "name": "Egg white scramble on toast",
+    "id": "breakfast_burrito",
+    "name": "Egg & cheese breakfast burrito",
     "kind": "breakfast",
+    "protein_source": "eggs",
     "minutes": 10,
     "quick": true,
-    "protein_g": 42,
+    "protein_g": 28,
     "ingredients": [
       {
-        "id": "egg_whites",
-        "grams": 200
-      },
-      {
         "id": "eggs",
-        "grams": 50
+        "grams": 100
       },
       {
-        "id": "bread",
-        "grams": 64
-      },
-      {
-        "id": "spinach",
-        "grams": 30
+        "id": "tortillas",
+        "grams": 90
       },
       {
         "id": "cheese",
-        "grams": 20
-      }
-    ]
-  },
-  {
-    "id": "cottage_berry_bowl",
-    "name": "Cottage cheese berry bowl",
-    "kind": "breakfast",
-    "minutes": 5,
-    "quick": true,
-    "protein_g": 29,
-    "ingredients": [
-      {
-        "id": "cottage_cheese",
-        "grams": 225
+        "grams": 30
       },
       {
-        "id": "berries",
-        "grams": 100
-      },
-      {
-        "id": "oats",
+        "id": "salsa",
         "grams": 30
       }
     ]
   },
   {
-    "id": "shake_and_oats",
-    "name": "Protein shake with oats",
+    "id": "protein_shake",
+    "name": "Protein shake & banana",
     "kind": "breakfast",
+    "protein_source": "dairy",
     "minutes": 5,
     "quick": true,
-    "protein_g": 42,
+    "protein_g": 38,
     "ingredients": [
       {
         "id": "whey",
@@ -150,12 +117,39 @@
         "grams": 300
       },
       {
-        "id": "oats",
+        "id": "bananas",
+        "grams": 120
+      },
+      {
+        "id": "peanut_butter",
+        "grams": 16
+      }
+    ]
+  },
+  {
+    "id": "ham_egg_sandwich",
+    "name": "Ham, egg & cheese sandwich",
+    "kind": "breakfast",
+    "protein_source": "pork",
+    "minutes": 10,
+    "quick": true,
+    "protein_g": 35,
+    "ingredients": [
+      {
+        "id": "eggs",
+        "grams": 100
+      },
+      {
+        "id": "deli_ham",
         "grams": 60
       },
       {
-        "id": "bananas",
-        "grams": 120
+        "id": "bread",
+        "grams": 64
+      },
+      {
+        "id": "cheese",
+        "grams": 20
       }
     ]
   },
@@ -163,6 +157,7 @@
     "id": "chicken_burrito_bowl",
     "name": "Chicken burrito bowl",
     "kind": "main",
+    "protein_source": "chicken",
     "minutes": 25,
     "quick": false,
     "protein_g": 52,
@@ -190,16 +185,17 @@
     ]
   },
   {
-    "id": "beef_stir_fry",
-    "name": "Beef & veggie stir-fry",
+    "id": "chicken_stir_fry",
+    "name": "Chicken stir-fry with rice",
     "kind": "main",
+    "protein_source": "chicken",
     "minutes": 20,
     "quick": false,
-    "protein_g": 33,
+    "protein_g": 44,
     "ingredients": [
       {
-        "id": "ground_beef",
-        "grams": 120
+        "id": "chicken_breast",
+        "grams": 150
       },
       {
         "id": "stirfry_veg",
@@ -216,65 +212,10 @@
     ]
   },
   {
-    "id": "beef_ragu",
-    "name": "Beef ragu pasta",
-    "kind": "main",
-    "minutes": 25,
-    "quick": false,
-    "protein_g": 43,
-    "ingredients": [
-      {
-        "id": "ground_beef",
-        "grams": 120
-      },
-      {
-        "id": "pasta",
-        "grams": 100
-      },
-      {
-        "id": "marinara",
-        "grams": 120
-      },
-      {
-        "id": "cheese",
-        "grams": 15
-      }
-    ]
-  },
-  {
-    "id": "tofu_fried_rice",
-    "name": "Tofu egg fried rice",
-    "kind": "main",
-    "minutes": 20,
-    "quick": false,
-    "protein_g": 51,
-    "ingredients": [
-      {
-        "id": "tofu",
-        "grams": 200
-      },
-      {
-        "id": "eggs",
-        "grams": 100
-      },
-      {
-        "id": "rice",
-        "grams": 75
-      },
-      {
-        "id": "stirfry_veg",
-        "grams": 100
-      },
-      {
-        "id": "soy_sauce",
-        "grams": 15
-      }
-    ]
-  },
-  {
     "id": "chicken_quesadilla",
     "name": "Chicken quesadilla",
     "kind": "main",
+    "protein_source": "chicken",
     "minutes": 15,
     "quick": true,
     "protein_g": 50,
@@ -298,57 +239,10 @@
     ]
   },
   {
-    "id": "tuna_melt",
-    "name": "Tuna melt",
-    "kind": "main",
-    "minutes": 10,
-    "quick": true,
-    "protein_g": 43,
-    "ingredients": [
-      {
-        "id": "tuna",
-        "grams": 113
-      },
-      {
-        "id": "bread",
-        "grams": 64
-      },
-      {
-        "id": "cheese",
-        "grams": 30
-      }
-    ]
-  },
-  {
-    "id": "turkey_taco_bowl",
-    "name": "Turkey taco bowl",
-    "kind": "main",
-    "minutes": 20,
-    "quick": false,
-    "protein_g": 41,
-    "ingredients": [
-      {
-        "id": "ground_turkey",
-        "grams": 150
-      },
-      {
-        "id": "rice",
-        "grams": 75
-      },
-      {
-        "id": "black_beans",
-        "grams": 80
-      },
-      {
-        "id": "salsa",
-        "grams": 40
-      }
-    ]
-  },
-  {
-    "id": "sheet_pan_thighs",
+    "id": "sheet_pan_chicken",
     "name": "Sheet-pan chicken & potatoes",
     "kind": "main",
+    "protein_source": "chicken",
     "minutes": 35,
     "quick": false,
     "protein_g": 46,
@@ -368,68 +262,17 @@
     ]
   },
   {
-    "id": "lentil_dal",
-    "name": "Lentil spinach dal with rice",
+    "id": "spaghetti_meat_sauce",
+    "name": "Spaghetti with meat sauce",
     "kind": "main",
-    "minutes": 30,
+    "protein_source": "beef",
+    "minutes": 25,
     "quick": false,
-    "protein_g": 35,
+    "protein_g": 43,
     "ingredients": [
       {
-        "id": "lentils",
-        "grams": 80
-      },
-      {
-        "id": "rice",
-        "grams": 60
-      },
-      {
-        "id": "spinach",
-        "grams": 40
-      },
-      {
-        "id": "greek_yogurt",
-        "grams": 100
-      }
-    ]
-  },
-  {
-    "id": "tuna_chickpea_wrap",
-    "name": "Tuna chickpea wrap",
-    "kind": "main",
-    "minutes": 10,
-    "quick": true,
-    "protein_g": 51,
-    "ingredients": [
-      {
-        "id": "tuna",
-        "grams": 113
-      },
-      {
-        "id": "chickpeas",
+        "id": "ground_beef",
         "grams": 120
-      },
-      {
-        "id": "tortillas",
-        "grams": 90
-      },
-      {
-        "id": "greek_yogurt",
-        "grams": 50
-      }
-    ]
-  },
-  {
-    "id": "turkey_marinara",
-    "name": "Turkey marinara pasta",
-    "kind": "main",
-    "minutes": 20,
-    "quick": false,
-    "protein_g": 44,
-    "ingredients": [
-      {
-        "id": "ground_turkey",
-        "grams": 150
       },
       {
         "id": "pasta",
@@ -440,22 +283,104 @@
         "grams": 120
       },
       {
-        "id": "spinach",
-        "grams": 30
+        "id": "cheese",
+        "grams": 15
       }
     ]
   },
   {
-    "id": "teriyaki_chicken",
-    "name": "Teriyaki chicken & broccoli",
+    "id": "beef_tacos",
+    "name": "Beef tacos",
     "kind": "main",
-    "minutes": 25,
+    "protein_source": "beef",
+    "minutes": 20,
     "quick": false,
-    "protein_g": 44,
+    "protein_g": 39,
     "ingredients": [
       {
-        "id": "chicken_thigh",
-        "grams": 180
+        "id": "ground_beef",
+        "grams": 120
+      },
+      {
+        "id": "tortillas",
+        "grams": 90
+      },
+      {
+        "id": "cheese",
+        "grams": 30
+      },
+      {
+        "id": "salsa",
+        "grams": 40
+      }
+    ]
+  },
+  {
+    "id": "beef_chili",
+    "name": "Beef & bean chili",
+    "kind": "main",
+    "protein_source": "beef",
+    "minutes": 30,
+    "quick": false,
+    "protein_g": 47,
+    "ingredients": [
+      {
+        "id": "ground_beef",
+        "grams": 150
+      },
+      {
+        "id": "black_beans",
+        "grams": 120
+      },
+      {
+        "id": "diced_tomatoes",
+        "grams": 200
+      },
+      {
+        "id": "cheese",
+        "grams": 20
+      }
+    ]
+  },
+  {
+    "id": "beef_broccoli_bowl",
+    "name": "Beef & broccoli rice bowl",
+    "kind": "main",
+    "protein_source": "beef",
+    "minutes": 20,
+    "quick": false,
+    "protein_g": 35,
+    "ingredients": [
+      {
+        "id": "ground_beef",
+        "grams": 120
+      },
+      {
+        "id": "broccoli",
+        "grams": 150
+      },
+      {
+        "id": "rice",
+        "grams": 75
+      },
+      {
+        "id": "soy_sauce",
+        "grams": 15
+      }
+    ]
+  },
+  {
+    "id": "salmon_rice",
+    "name": "Baked salmon, rice & broccoli",
+    "kind": "main",
+    "protein_source": "seafood",
+    "minutes": 25,
+    "quick": false,
+    "protein_g": 43,
+    "ingredients": [
+      {
+        "id": "salmon",
+        "grams": 170
       },
       {
         "id": "rice",
@@ -464,10 +389,110 @@
       {
         "id": "broccoli",
         "grams": 120
+      }
+    ]
+  },
+  {
+    "id": "shrimp_fried_rice",
+    "name": "Shrimp fried rice",
+    "kind": "main",
+    "protein_source": "seafood",
+    "minutes": 20,
+    "quick": false,
+    "protein_g": 45,
+    "ingredients": [
+      {
+        "id": "shrimp",
+        "grams": 120
+      },
+      {
+        "id": "eggs",
+        "grams": 100
+      },
+      {
+        "id": "rice",
+        "grams": 75
+      },
+      {
+        "id": "stirfry_veg",
+        "grams": 100
       },
       {
         "id": "soy_sauce",
         "grams": 15
+      }
+    ]
+  },
+  {
+    "id": "shrimp_tacos",
+    "name": "Shrimp tacos",
+    "kind": "main",
+    "protein_source": "seafood",
+    "minutes": 15,
+    "quick": true,
+    "protein_g": 37,
+    "ingredients": [
+      {
+        "id": "shrimp",
+        "grams": 120
+      },
+      {
+        "id": "tortillas",
+        "grams": 90
+      },
+      {
+        "id": "salsa",
+        "grams": 40
+      },
+      {
+        "id": "cheese",
+        "grams": 20
+      }
+    ]
+  },
+  {
+    "id": "tuna_melt",
+    "name": "Tuna melt",
+    "kind": "main",
+    "protein_source": "seafood",
+    "minutes": 10,
+    "quick": true,
+    "protein_g": 43,
+    "ingredients": [
+      {
+        "id": "tuna",
+        "grams": 113
+      },
+      {
+        "id": "bread",
+        "grams": 64
+      },
+      {
+        "id": "cheese",
+        "grams": 30
+      }
+    ]
+  },
+  {
+    "id": "pork_chops",
+    "name": "Pork chops, potatoes & green beans",
+    "kind": "main",
+    "protein_source": "pork",
+    "minutes": 30,
+    "quick": false,
+    "protein_g": 45,
+    "ingredients": [
+      {
+        "id": "pork_chops",
+        "grams": 170
+      },
+      {
+        "id": "potatoes",
+        "grams": 250
+      },
+      {
+        "id": "green_beans",
+        "grams": 120
       }
     ]
   }

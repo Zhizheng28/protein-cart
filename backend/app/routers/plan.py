@@ -117,6 +117,7 @@ def quick_meals(
             QuickMeal(
                 id=meal.id,
                 name=meal.name,
+                protein_source=meal.protein_source,
                 minutes=meal.minutes,
                 protein_g=meal.protein_g,
                 cost_cents=cost,

@@ -13,7 +13,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from app.catalog import load_meals, load_sample_prices  # noqa: E402
+from app.catalog import load_ingredients, load_meals, load_sample_prices  # noqa: E402
 from app.matching import build_cart, cart_total_cents, meal_cost_cents  # noqa: E402
 from app.optimizer import build_week  # noqa: E402
 from app.routers.stores import STORES  # noqa: E402
@@ -68,6 +68,7 @@ def main() -> None:
     data = {
         "price_book": prices.model_dump(),
         "meals": [meal.model_dump() for meal in meals.values()],
+        "ingredient_aisles": {ing.id: ing.aisle for ing in load_ingredients().values()},
         "fun_goals": [goal.model_dump() for goal in FUN_GOALS],
         "goal_labels": GOAL_LABELS,
         "protein_factors": PROTEIN_FACTORS,

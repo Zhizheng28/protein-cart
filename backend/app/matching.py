@@ -11,11 +11,12 @@ from math import ceil
 
 from pydantic import BaseModel
 
-from app.catalog import Meal, PriceBook, Product
+from app.catalog import Aisle, Meal, PriceBook, Product, load_ingredients
 
 
 class CartItem(BaseModel):
     ingredient_id: str
+    aisle: Aisle
     product_name: str
     size: str
     grams_needed: int
@@ -67,6 +68,7 @@ def build_cart(
             grams[part.id] += part.grams
             uses[part.id] += 1
 
+    ingredients = load_ingredients()
     items: list[CartItem] = []
     for ingredient_id, grams_needed in grams.items():
         product = prices.products[ingredient_id]
@@ -74,6 +76,7 @@ def build_cart(
         items.append(
             CartItem(
                 ingredient_id=ingredient_id,
+                aisle=ingredients[ingredient_id].aisle,
                 product_name=product.name,
                 size=product.size,
                 grams_needed=grams_needed,

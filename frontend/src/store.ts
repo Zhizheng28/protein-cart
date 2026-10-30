@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import type { Plan, Profile, Tab } from "./types";
 
-const STORAGE_KEY = "protein-cart-state-v1";
+// v2: the menu changed, so plans saved with v1 meal ids are dropped.
+const STORAGE_KEY = "protein-cart-state-v2";
 
 export interface BankedWeek {
   week: number;

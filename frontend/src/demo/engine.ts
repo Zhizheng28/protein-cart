@@ -1,7 +1,15 @@
 // Browser port of the backend's cart and savings math, for the static demo.
 // Python (backend/app/matching.py, savings.py) is the source of truth;
 // engine.test.ts checks these functions against answers exported from it.
-import type { CartItem, Evaluation, Goal, QuickMeal, WeekMoney } from "../types";
+import type {
+  Aisle,
+  CartItem,
+  Evaluation,
+  Goal,
+  ProteinSource,
+  QuickMeal,
+  WeekMoney,
+} from "../types";
 import data from "./data.json";
 
 export interface DemoProduct {
@@ -15,6 +23,7 @@ export interface DemoMeal {
   id: string;
   name: string;
   kind: "breakfast" | "main";
+  protein_source: ProteinSource;
   minutes: number;
   quick: boolean;
   protein_g: number;
@@ -36,6 +45,7 @@ export const demo = data as unknown as {
     products: Record<string, DemoProduct>;
   };
   meals: DemoMeal[];
+  ingredient_aisles: Record<string, Aisle>;
   fun_goals: { id: string; name: string; cost_cents: number }[];
   goal_labels: Record<Goal, string>;
   protein_factors: Record<Goal, number>;
@@ -80,6 +90,7 @@ export function buildCart(mealIds: string[]): CartItem[] {
     const packages = Math.ceil(needed / p.package_grams);
     items.push({
       ingredient_id: id,
+      aisle: demo.ingredient_aisles[id] ?? "pantry",
       product_name: p.name,
       size: p.size,
       grams_needed: needed,
@@ -143,6 +154,7 @@ export function quickMeals(inCart: string[]): QuickMeal[] {
       return {
         id: meal.id,
         name: meal.name,
+        protein_source: meal.protein_source,
         minutes: meal.minutes,
         protein_g: meal.protein_g,
         cost_cents: cost,

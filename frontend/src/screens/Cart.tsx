@@ -1,4 +1,5 @@
 import { Receipt } from "../components/Receipt";
+import { AISLES } from "../food";
 import { money, plural, priceLabel } from "../format";
 import type { Evaluation } from "../types";
 
@@ -28,6 +29,10 @@ export function Cart({ evaluation, sending, onSend, onBuildWeek }: CartProps) {
   }
 
   const left = m.budget_cents - m.grocery_cents;
+  const sections = AISLES.map((aisle) => ({
+    ...aisle,
+    items: items.filter((item) => item.aisle === aisle.id),
+  })).filter((section) => section.items.length > 0);
 
   return (
     <div className="flex flex-col gap-4">
@@ -45,28 +50,42 @@ export function Cart({ evaluation, sending, onSend, onBuildWeek }: CartProps) {
         <span>{priceLabel(source, !source.is_sample)}</span>
       </p>
 
-      <ul className="card py-1">
-        {items.map((item) => (
-          <li
-            key={item.ingredient_id}
-            className="border-line grid grid-cols-[1fr_auto_auto] items-center gap-2.5 border-t py-2.5 first:border-t-0"
-          >
-            <div className="min-w-0">
-              <div className="font-bold">{item.product_name}</div>
-              <div className="num text-muted text-[13px]">
-                used in {plural(item.meals_using, "meal")}
-              </div>
+      {sections.map((section) => {
+        const subtotal = section.items.reduce((sum, item) => sum + item.cost_cents, 0);
+        return (
+          <section key={section.id} className="card py-2" aria-label={section.label}>
+            <div className="border-line flex items-baseline justify-between gap-3 border-b pt-1 pb-2">
+              <h3 className="section-title">{section.label}</h3>
+              <span className="num text-muted text-[13px]">{money(subtotal)}</span>
             </div>
-            <span className="num text-muted text-[13px]" aria-label={`${item.packages} packages`}>
-              ×{item.packages}
-            </span>
-            <span className="num">{money(item.cost_cents)}</span>
-          </li>
-        ))}
-      </ul>
+            <ul>
+              {section.items.map((item) => (
+                <li
+                  key={item.ingredient_id}
+                  className="border-line grid grid-cols-[1fr_auto_auto] items-center gap-2.5 border-t py-2.5 first:border-t-0"
+                >
+                  <div className="min-w-0">
+                    <div className="leading-snug font-bold">{item.product_name}</div>
+                    <div className="text-muted text-[13px]">
+                      used in {plural(item.meals_using, "meal")}
+                    </div>
+                  </div>
+                  <span
+                    className="num text-muted text-[13px]"
+                    aria-label={`${item.packages} packages`}
+                  >
+                    ×{item.packages}
+                  </span>
+                  <span className="num">{money(item.cost_cents)}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        );
+      })}
 
       <Receipt
-        label="Cart total"
+        title={`${source.store} · this week`}
         lines={[
           { label: "Cart total", value: money(m.grocery_cents) },
           { label: "Per meal", value: money(m.per_meal_cents) },

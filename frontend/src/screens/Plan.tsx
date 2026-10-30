@@ -1,4 +1,6 @@
 import { ProgressBar } from "../components/ProgressBar";
+import { ProteinTag } from "../components/ProteinTag";
+import { mainsMix } from "../food";
 import type { MealSummary, Plan as PlanData } from "../types";
 
 export const DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
@@ -22,6 +24,7 @@ export function Plan({ plan, mealsById, day, shuffling, onDay, onSwap, onShuffle
   const meals = plan.days[day] ?? [];
   const protein = dayProtein(meals, mealsById);
   const target = plan.targetG;
+  const mix = mainsMix(plan.days, mealsById);
 
   return (
     <div className="flex flex-col gap-4">
@@ -29,6 +32,15 @@ export function Plan({ plan, mealsById, day, shuffling, onDay, onSwap, onShuffle
         <span className="eyebrow">Weekly plan</span>
         <h2>21 meals, about {target} g protein a day</h2>
       </div>
+
+      <section className="flex flex-col gap-2" aria-label="This week's protein mix">
+        <span className="section-title">Lunches and dinners this week</span>
+        <div className="flex flex-wrap gap-1.5">
+          {mix.map(([source, count]) => (
+            <ProteinTag key={source} source={source} count={count} />
+          ))}
+        </div>
+      </section>
 
       <div className="grid grid-cols-7 gap-1" role="group" aria-label="Day">
         {DAYS.map((name, i) => (
@@ -38,7 +50,9 @@ export function Plan({ plan, mealsById, day, shuffling, onDay, onSwap, onShuffle
             aria-pressed={i === day}
             onClick={() => onDay(i)}
             className={`min-h-11 rounded-[10px] border px-0 text-sm font-bold ${
-              i === day ? "bg-ink text-page border-ink" : "bg-surface border-line text-ink"
+              i === day
+                ? "bg-navy text-on-navy border-navy shadow-[inset_0_-3px_0_var(--maize)]"
+                : "bg-surface border-line text-ink hover:border-muted"
             }`}
           >
             {name}
@@ -54,25 +68,27 @@ export function Plan({ plan, mealsById, day, shuffling, onDay, onSwap, onShuffle
           </span>
         </div>
         <ProgressBar value={protein} max={target} tone="teal" label={`${DAYS[day]} protein`} />
-        <ul>
+        <ul className="mt-1">
           {meals.map((id, slot) => {
             const meal = mealsById[id];
             if (!meal) return null;
             return (
               <li
                 key={`${slot}-${id}`}
-                className="border-line grid grid-cols-[84px_1fr_auto] items-center gap-2.5 border-t py-2.5 first:border-t-0"
+                className="border-line grid grid-cols-[1fr_auto] items-center gap-3 border-t py-3 first:border-t-0"
               >
-                <span className="text-muted text-xs font-bold tracking-[.06em] uppercase">
-                  {SLOTS[slot]}
-                </span>
-                <div className="min-w-0">
-                  <div className="font-bold">{meal.name}</div>
-                  <div className="text-muted text-[13px]">
-                    <span className="num">{meal.protein_g} g</span> protein ·{" "}
-                    <span className="num">{meal.minutes}</span> min
-                    {meal.quick && " · quick"}
-                  </div>
+                <div className="flex min-w-0 flex-col gap-1">
+                  <span className="text-muted text-[11px] font-bold tracking-[.08em] uppercase">
+                    {SLOTS[slot]}
+                  </span>
+                  <span className="font-bold leading-snug">{meal.name}</span>
+                  <span className="text-muted flex flex-wrap items-center gap-x-2 gap-y-1 text-[13px]">
+                    <ProteinTag source={meal.protein_source} />
+                    <span>
+                      <span className="num">{meal.protein_g} g</span> protein ·{" "}
+                      <span className="num">{meal.minutes}</span> min
+                    </span>
+                  </span>
                 </div>
                 <button
                   type="button"

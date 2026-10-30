@@ -17,16 +17,20 @@ BOOK = PriceBook(
     location="Test",
     fetched_at="2026-10-28",
     is_sample=True,
-    products={"chicken": CHICKEN, "rice": RICE},
+    products={"chicken_breast": CHICKEN, "rice": RICE},
 )
 BOWL = Meal(
     id="bowl",
     name="Bowl",
     kind="main",
+    protein_source="chicken",
     minutes=20,
     quick=False,
     protein_g=40,
-    ingredients=[MealIngredient(id="chicken", grams=150), MealIngredient(id="rice", grams=75)],
+    ingredients=[
+        MealIngredient(id="chicken_breast", grams=150),
+        MealIngredient(id="rice", grams=75),
+    ],
 )
 
 
@@ -51,11 +55,12 @@ def test_cart_buys_whole_packages() -> None:
     meals = {"bowl": BOWL}
     items = build_cart(["bowl"] * 10, meals, BOOK)  # 1500 g chicken, 750 g rice
     by_id = {item.ingredient_id: item for item in items}
-    assert by_id["chicken"].packages == 2
+    assert by_id["chicken_breast"].packages == 2
+    assert by_id["chicken_breast"].aisle == "meat"
     assert by_id["rice"].packages == 1
-    assert by_id["chicken"].meals_using == 10
+    assert by_id["chicken_breast"].meals_using == 10
     assert cart_total_cents(items) == 2 * 1047 + 329
-    assert items[0].ingredient_id == "chicken"  # most expensive first
+    assert items[0].ingredient_id == "chicken_breast"  # most expensive first
 
 
 def test_sample_book_covers_every_meal_ingredient() -> None:

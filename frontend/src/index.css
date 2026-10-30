@@ -1,64 +1,142 @@
 @import "tailwindcss";
 
-/* Design tokens. Light by default, dark from the OS, or forced with data-theme. */
+/*
+  Color system (60 / 30 / 10):
+  - 60% calm cool neutrals (bg, surface, line) so content leads.
+  - 30% Michigan navy for brand moments: hero bands and the feature card.
+  - 10% maize, navy's complement, only for the primary action and the goal bar.
+  Teal (analogous to navy) always means "money saved". Warn is reserved for over budget.
+  Protein colors share one lightness so they read as a family, and each pair passes AA.
+*/
 :root {
-  --bg: #eef1f5;
+  --bg: #f3f5f9;
   --surface: #ffffff;
+  --surface-2: #f6f8fb;
   --ink: #16213a;
-  --muted: #5b6478;
-  --line: #d7dce5;
+  --muted: #566078;
+  --line: #dde2ea;
+
+  --navy: #16213a;
+  --navy-line: #2c3a5c;
+  --on-navy: #ffffff;
+  --on-navy-muted: #b4bed3;
+
   --maize: #e9a800;
-  --maize-soft: #fff3cc;
+  --maize-hover: #d39800;
+  --maize-soft: #fff4d1;
+  --on-maize: #16213a;
   --teal: #0b7f72;
-  --teal-soft: #ddf2ef;
+  --teal-bright: #4fd1c0;
+  --teal-soft: #e0f3f0;
   --warn: #b4441c;
   --warn-soft: #fbe6dd;
-  --on-maize: #16213a;
+
+  --p-chicken: #8a5d00;
+  --p-chicken-bg: #fff1c7;
+  --p-beef: #a3372a;
+  --p-beef-bg: #fde4df;
+  --p-seafood: #1c5ea6;
+  --p-seafood-bg: #e0ecfa;
+  --p-pork: #a03468;
+  --p-pork-bg: #fbe3ee;
+  --p-eggs: #4d5a73;
+  --p-eggs-bg: #e8ebf1;
+  --p-dairy: #5b45b0;
+  --p-dairy-bg: #ece7fb;
+
+  --shadow-sm: 0 1px 2px rgba(22, 33, 58, 0.06), 0 2px 8px rgba(22, 33, 58, 0.04);
+  --shadow-lg: 0 2px 4px rgba(10, 16, 30, 0.12), 0 16px 40px rgba(10, 16, 30, 0.22);
   color-scheme: light;
 }
+
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0e1424;
-    --surface: #172036;
+    --bg: #0b1120;
+    --surface: #141c2f;
+    --surface-2: #10182a;
     --ink: #edf0f6;
     --muted: #a3abbd;
-    --line: #2a3550;
+    --line: #26314a;
+    --navy: #1a2643;
+    --navy-line: #33426a;
+    --on-navy-muted: #aab5ca;
     --maize: #f5bc1f;
+    --maize-hover: #ffca3a;
     --maize-soft: #3a3114;
     --teal: #3cc2b1;
     --teal-soft: #12322f;
     --warn: #f08a63;
     --warn-soft: #3a2018;
+    --p-chicken: #f5c84f;
+    --p-chicken-bg: #3a3012;
+    --p-beef: #f39a87;
+    --p-beef-bg: #3d1f1a;
+    --p-seafood: #86b6f2;
+    --p-seafood-bg: #172b46;
+    --p-pork: #f09ac2;
+    --p-pork-bg: #3b1d2c;
+    --p-eggs: #c3cad8;
+    --p-eggs-bg: #263049;
+    --p-dairy: #bda6f5;
+    --p-dairy-bg: #2a2145;
+    --shadow-sm: none;
+    --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.45);
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #0e1424;
-  --surface: #172036;
+  --bg: #0b1120;
+  --surface: #141c2f;
+  --surface-2: #10182a;
   --ink: #edf0f6;
   --muted: #a3abbd;
-  --line: #2a3550;
+  --line: #26314a;
+  --navy: #1a2643;
+  --navy-line: #33426a;
+  --on-navy-muted: #aab5ca;
   --maize: #f5bc1f;
+  --maize-hover: #ffca3a;
   --maize-soft: #3a3114;
   --teal: #3cc2b1;
   --teal-soft: #12322f;
   --warn: #f08a63;
   --warn-soft: #3a2018;
+  --p-chicken: #f5c84f;
+  --p-chicken-bg: #3a3012;
+  --p-beef: #f39a87;
+  --p-beef-bg: #3d1f1a;
+  --p-seafood: #86b6f2;
+  --p-seafood-bg: #172b46;
+  --p-pork: #f09ac2;
+  --p-pork-bg: #3b1d2c;
+  --p-eggs: #c3cad8;
+  --p-eggs-bg: #263049;
+  --p-dairy: #bda6f5;
+  --p-dairy-bg: #2a2145;
+  --shadow-sm: none;
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.45);
   color-scheme: dark;
 }
 
 @theme inline {
   --color-page: var(--bg);
   --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
   --color-ink: var(--ink);
   --color-muted: var(--muted);
   --color-line: var(--line);
+  --color-navy: var(--navy);
+  --color-navy-line: var(--navy-line);
+  --color-on-navy: var(--on-navy);
+  --color-on-navy-muted: var(--on-navy-muted);
   --color-maize: var(--maize);
   --color-maize-soft: var(--maize-soft);
   --color-teal: var(--teal);
+  --color-teal-bright: var(--teal-bright);
   --color-teal-soft: var(--teal-soft);
   --color-warn: var(--warn);
   --color-warn-soft: var(--warn-soft);
+  --color-warn-on-navy: #ffb59a;
   --font-display: "Familjen Grotesk", "Helvetica Neue", Arial, sans-serif;
   --font-body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
@@ -77,22 +155,28 @@
     line-height: 1.5;
     padding-left: max(16px, env(safe-area-inset-left, 0px));
     padding-right: max(16px, env(safe-area-inset-right, 0px));
+    -webkit-font-smoothing: antialiased;
     -webkit-tap-highlight-color: transparent;
+  }
+  /* The landing page lays out its own full-bleed bands. */
+  body.landing {
+    padding-left: 0;
+    padding-right: 0;
   }
   h1,
   h2,
   h3 {
     font-family: var(--font-display);
     text-wrap: balance;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.015em;
     font-weight: 700;
   }
   h1 {
     font-size: 30px;
-    line-height: 1.1;
+    line-height: 1.08;
   }
   h2 {
-    font-size: 21px;
+    font-size: 22px;
     line-height: 1.2;
   }
   h3 {
@@ -103,7 +187,8 @@
     outline: 3px solid var(--maize);
     outline-offset: 2px;
   }
-  button {
+  button,
+  a {
     cursor: pointer;
   }
   button:disabled {
@@ -114,7 +199,7 @@
 @layer components {
   .eyebrow {
     font-size: 12px;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--muted);
     font-weight: 700;
@@ -122,6 +207,7 @@
   .num {
     font-family: var(--font-mono);
     font-variant-numeric: tabular-nums;
+    letter-spacing: -0.01em;
   }
   .note {
     font-size: 12px;
@@ -130,9 +216,30 @@
   .card {
     background: var(--surface);
     border: 1px solid var(--line);
-    border-radius: 14px;
+    border-radius: 16px;
     padding: 16px;
+    box-shadow: var(--shadow-sm);
   }
+  /* Navy feature surface: one per screen, for the number that matters most. */
+  .feature {
+    background: var(--navy);
+    color: var(--on-navy);
+    border: 1px solid var(--navy-line);
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: var(--shadow-sm);
+  }
+  .feature .eyebrow,
+  .on-navy-muted {
+    color: var(--on-navy-muted);
+  }
+  .section-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--muted);
+    letter-spacing: 0.02em;
+  }
+
   .field {
     display: flex;
     flex-direction: column;
@@ -150,7 +257,11 @@
     border-radius: 10px;
     padding: 11px 12px;
     width: 100%;
-    min-height: 44px;
+    min-height: 46px;
+    transition: border-color 0.15s;
+  }
+  .input:hover {
+    border-color: var(--muted);
   }
   .seg {
     display: grid;
@@ -163,42 +274,68 @@
     color: var(--ink);
     border-radius: 10px;
     padding: 8px 4px;
-    min-height: 44px;
+    min-height: 46px;
     font-weight: 700;
     line-height: 1.2;
+    transition:
+      border-color 0.15s,
+      background-color 0.15s;
+  }
+  .seg button:hover:not(:disabled):not([aria-pressed="true"]) {
+    border-color: var(--muted);
   }
   .seg button[aria-pressed="true"] {
-    background: var(--ink);
-    color: var(--bg);
-    border-color: var(--ink);
+    background: var(--navy);
+    color: var(--on-navy);
+    border-color: var(--navy);
+    box-shadow: inset 0 -3px 0 var(--maize);
   }
   .seg button:disabled {
     color: var(--muted);
+    background: var(--surface-2);
     border-style: dashed;
   }
   .btn {
     font-weight: 700;
     border: 0;
     border-radius: 12px;
-    padding: 13px 16px;
+    padding: 13px 18px;
     min-height: 48px;
     width: 100%;
+    text-decoration: none;
+    transition:
+      background-color 0.15s,
+      border-color 0.15s;
   }
   .btn-primary {
     background: var(--maize);
     color: var(--on-maize);
   }
+  .btn-primary:hover:not(:disabled) {
+    background: var(--maize-hover);
+  }
   .btn-ghost {
-    background: transparent;
+    background: var(--surface);
     border: 1px solid var(--line);
     color: var(--ink);
+  }
+  .btn-ghost:hover:not(:disabled) {
+    border-color: var(--muted);
+  }
+  .btn-on-navy {
+    background: transparent;
+    border: 1px solid var(--navy-line);
+    color: var(--on-navy);
+  }
+  .btn-on-navy:hover {
+    border-color: var(--on-navy-muted);
   }
   .btn:disabled {
     opacity: 0.6;
   }
   .btn-small {
     width: auto;
-    padding: 8px 12px;
+    padding: 8px 14px;
     min-height: 44px;
     font-size: 13px;
     border-radius: 10px;
@@ -209,7 +346,7 @@
     gap: 4px;
     font-size: 12px;
     font-weight: 700;
-    padding: 3px 8px;
+    padding: 3px 9px;
     border-radius: 999px;
     background: var(--teal-soft);
     color: var(--teal);
@@ -225,7 +362,7 @@
   }
   .iconbtn {
     border: 1px solid var(--line);
-    background: transparent;
+    background: var(--surface);
     color: var(--ink);
     border-radius: 10px;
     padding: 6px 12px;
@@ -234,14 +371,63 @@
     font-size: 13px;
     font-weight: 700;
   }
+  .iconbtn:hover {
+    border-color: var(--muted);
+  }
 
-  /* Receipt: the signature money breakdown. */
+  /* Protein tags: a dot plus a word, so color is never the only signal. */
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 11.5px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 4px 8px 4px 7px;
+    border-radius: 999px;
+    white-space: nowrap;
+    color: var(--tag);
+    background: var(--tag-bg);
+  }
+  .tag::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 999px;
+    background: currentColor;
+  }
+  .tag-chicken {
+    --tag: var(--p-chicken);
+    --tag-bg: var(--p-chicken-bg);
+  }
+  .tag-beef {
+    --tag: var(--p-beef);
+    --tag-bg: var(--p-beef-bg);
+  }
+  .tag-seafood {
+    --tag: var(--p-seafood);
+    --tag-bg: var(--p-seafood-bg);
+  }
+  .tag-pork {
+    --tag: var(--p-pork);
+    --tag-bg: var(--p-pork-bg);
+  }
+  .tag-eggs {
+    --tag: var(--p-eggs);
+    --tag-bg: var(--p-eggs-bg);
+  }
+  .tag-dairy {
+    --tag: var(--p-dairy);
+    --tag-bg: var(--p-dairy-bg);
+  }
+
+  /* Receipt: the signature money breakdown. Savings and cart totals only. */
   .receipt {
     background: var(--surface);
     border: 1px solid var(--line);
     border-bottom: 0;
-    border-radius: 14px 14px 0 0;
-    padding: 16px 16px 12px;
+    border-radius: 16px 16px 0 0;
+    padding: 18px 18px 12px;
     position: relative;
     margin-bottom: 8px;
   }
@@ -255,6 +441,17 @@
     background:
       linear-gradient(-45deg, transparent 6px, var(--surface) 0) 0 0 / 12px 8px repeat-x,
       linear-gradient(45deg, transparent 6px, var(--surface) 0) 0 0 / 12px 8px repeat-x;
+  }
+  .receipt-title {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 6px;
+    border-bottom: 1px dashed var(--line);
   }
   .rline {
     display: flex;
@@ -274,14 +471,15 @@
   }
   .big {
     font-family: var(--font-mono);
-    font-size: 40px;
+    font-size: 44px;
     font-weight: 700;
     line-height: 1;
     font-variant-numeric: tabular-nums;
+    letter-spacing: -0.03em;
   }
 
   .bar {
-    height: 14px;
+    height: 12px;
     background: var(--line);
     border-radius: 999px;
     overflow: hidden;
@@ -310,6 +508,11 @@
 
 @media (prefers-reduced-motion: reduce) {
   .bar > span.spring {
+    transition: none;
+  }
+  .btn,
+  .seg button,
+  .input {
     transition: none;
   }
 }
