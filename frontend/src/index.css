@@ -250,7 +250,7 @@
   .input {
     font: inherit;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px; /* 16px or more stops iPhone Safari from zooming in on focus */
     color: var(--ink);
     background: var(--surface);
     border: 1px solid var(--line);
