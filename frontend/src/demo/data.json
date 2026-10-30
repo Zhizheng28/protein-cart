@@ -1,0 +1,2285 @@
+{
+  "price_book": {
+    "store": "Kroger",
+    "location": "Ann Arbor, MI",
+    "fetched_at": "2026-10-28",
+    "is_sample": true,
+    "products": {
+      "chicken_breast": {
+        "name": "Kroger Boneless Skinless Chicken Breasts, 3 lb",
+        "size": "3 lb",
+        "package_grams": 1361,
+        "price_cents": 1047
+      },
+      "chicken_thigh": {
+        "name": "Kroger Boneless Skinless Chicken Thighs, 3 lb",
+        "size": "3 lb",
+        "package_grams": 1361,
+        "price_cents": 899
+      },
+      "ground_beef": {
+        "name": "Kroger 93/7 Lean Ground Beef, 2 lb",
+        "size": "2 lb",
+        "package_grams": 907,
+        "price_cents": 1198
+      },
+      "ground_turkey": {
+        "name": "Kroger 93/7 Ground Turkey, 1 lb",
+        "size": "1 lb",
+        "package_grams": 454,
+        "price_cents": 549
+      },
+      "eggs": {
+        "name": "Kroger Grade A Large Eggs, 18 ct",
+        "size": "18 ct",
+        "package_grams": 900,
+        "price_cents": 429
+      },
+      "egg_whites": {
+        "name": "Kroger 100% Liquid Egg Whites, 32 oz",
+        "size": "32 oz",
+        "package_grams": 907,
+        "price_cents": 449
+      },
+      "greek_yogurt": {
+        "name": "Kroger Plain Nonfat Greek Yogurt, 32 oz",
+        "size": "32 oz",
+        "package_grams": 907,
+        "price_cents": 499
+      },
+      "cottage_cheese": {
+        "name": "Kroger 2% Cottage Cheese, 24 oz",
+        "size": "24 oz",
+        "package_grams": 680,
+        "price_cents": 399
+      },
+      "milk": {
+        "name": "Kroger 2% Reduced Fat Milk, 1 gal",
+        "size": "1 gal",
+        "package_grams": 3785,
+        "price_cents": 359
+      },
+      "whey": {
+        "name": "Simple Truth Whey Protein, Vanilla, 2 lb",
+        "size": "2 lb",
+        "package_grams": 907,
+        "price_cents": 2499
+      },
+      "tofu": {
+        "name": "Simple Truth Organic Extra Firm Tofu, 14 oz",
+        "size": "14 oz",
+        "package_grams": 397,
+        "price_cents": 229
+      },
+      "tuna": {
+        "name": "Kroger Chunk Light Tuna in Water, 4 x 5 oz",
+        "size": "4 x 5 oz",
+        "package_grams": 452,
+        "price_cents": 496
+      },
+      "black_beans": {
+        "name": "Kroger Black Beans, 2 x 15 oz",
+        "size": "2 x 15 oz",
+        "package_grams": 480,
+        "price_cents": 200
+      },
+      "chickpeas": {
+        "name": "Kroger Garbanzo Beans, 15 oz",
+        "size": "15 oz",
+        "package_grams": 240,
+        "price_cents": 109
+      },
+      "lentils": {
+        "name": "Kroger Lentils, 1 lb",
+        "size": "1 lb",
+        "package_grams": 454,
+        "price_cents": 179
+      },
+      "rice": {
+        "name": "Kroger Jasmine Rice, 2 lb",
+        "size": "2 lb",
+        "package_grams": 907,
+        "price_cents": 329
+      },
+      "pasta": {
+        "name": "Kroger Penne Rigate, 1 lb",
+        "size": "1 lb",
+        "package_grams": 454,
+        "price_cents": 129
+      },
+      "oats": {
+        "name": "Kroger Old Fashioned Oats, 42 oz",
+        "size": "42 oz",
+        "package_grams": 1191,
+        "price_cents": 449
+      },
+      "tortillas": {
+        "name": "Kroger Flour Tortillas, 10 ct",
+        "size": "10 ct",
+        "package_grams": 450,
+        "price_cents": 279
+      },
+      "bread": {
+        "name": "Kroger 100% Whole Wheat Bread, 20 oz",
+        "size": "20 oz",
+        "package_grams": 567,
+        "price_cents": 249
+      },
+      "cheese": {
+        "name": "Kroger Mexican Style Shredded Cheese, 8 oz",
+        "size": "8 oz",
+        "package_grams": 227,
+        "price_cents": 279
+      },
+      "stirfry_veg": {
+        "name": "Kroger Stir Fry Vegetables, 2 lb",
+        "size": "2 lb",
+        "package_grams": 907,
+        "price_cents": 349
+      },
+      "broccoli": {
+        "name": "Kroger Broccoli Florets, 12 oz",
+        "size": "12 oz",
+        "package_grams": 340,
+        "price_cents": 179
+      },
+      "spinach": {
+        "name": "Kroger Baby Spinach, 5 oz",
+        "size": "5 oz",
+        "package_grams": 142,
+        "price_cents": 249
+      },
+      "potatoes": {
+        "name": "Kroger Russet Potatoes, 5 lb",
+        "size": "5 lb",
+        "package_grams": 2268,
+        "price_cents": 399
+      },
+      "bananas": {
+        "name": "Bananas, about 2.5 lb",
+        "size": "about 6",
+        "package_grams": 720,
+        "price_cents": 180
+      },
+      "berries": {
+        "name": "Kroger Frozen Mixed Berries, 16 oz",
+        "size": "16 oz",
+        "package_grams": 454,
+        "price_cents": 349
+      },
+      "peanut_butter": {
+        "name": "Kroger Creamy Peanut Butter, 16 oz",
+        "size": "16 oz",
+        "package_grams": 454,
+        "price_cents": 249
+      },
+      "salsa": {
+        "name": "Kroger Medium Salsa, 16 oz",
+        "size": "16 oz",
+        "package_grams": 454,
+        "price_cents": 299
+      },
+      "marinara": {
+        "name": "Kroger Marinara Pasta Sauce, 24 oz",
+        "size": "24 oz",
+        "package_grams": 680,
+        "price_cents": 229
+      },
+      "soy_sauce": {
+        "name": "Kroger Soy Sauce, 15 oz",
+        "size": "15 oz",
+        "package_grams": 444,
+        "price_cents": 199
+      }
+    }
+  },
+  "meals": [
+    {
+      "id": "egg_bean_burrito",
+      "name": "Egg & bean burrito",
+      "kind": "breakfast",
+      "minutes": 10,
+      "quick": true,
+      "protein_g": 32,
+      "ingredients": [
+        { "id": "eggs", "grams": 100 },
+        { "id": "black_beans", "grams": 80 },
+        { "id": "tortillas", "grams": 90 },
+        { "id": "salsa", "grams": 30 },
+        { "id": "cheese", "grams": 20 }
+      ]
+    },
+    {
+      "id": "yogurt_oat_bowl",
+      "name": "Greek yogurt oat bowl",
+      "kind": "breakfast",
+      "minutes": 5,
+      "quick": true,
+      "protein_g": 32,
+      "ingredients": [
+        { "id": "greek_yogurt", "grams": 250 },
+        { "id": "oats", "grams": 40 },
+        { "id": "bananas", "grams": 120 }
+      ]
+    },
+    {
+      "id": "pb_overnight_oats",
+      "name": "PB banana overnight oats",
+      "kind": "breakfast",
+      "minutes": 5,
+      "quick": true,
+      "protein_g": 35,
+      "ingredients": [
+        { "id": "oats", "grams": 60 },
+        { "id": "milk", "grams": 240 },
+        { "id": "peanut_butter", "grams": 32 },
+        { "id": "bananas", "grams": 120 },
+        { "id": "greek_yogurt", "grams": 100 }
+      ]
+    },
+    {
+      "id": "egg_white_scramble",
+      "name": "Egg white scramble on toast",
+      "kind": "breakfast",
+      "minutes": 10,
+      "quick": true,
+      "protein_g": 42,
+      "ingredients": [
+        { "id": "egg_whites", "grams": 200 },
+        { "id": "eggs", "grams": 50 },
+        { "id": "bread", "grams": 64 },
+        { "id": "spinach", "grams": 30 },
+        { "id": "cheese", "grams": 20 }
+      ]
+    },
+    {
+      "id": "cottage_berry_bowl",
+      "name": "Cottage cheese berry bowl",
+      "kind": "breakfast",
+      "minutes": 5,
+      "quick": true,
+      "protein_g": 29,
+      "ingredients": [
+        { "id": "cottage_cheese", "grams": 225 },
+        { "id": "berries", "grams": 100 },
+        { "id": "oats", "grams": 30 }
+      ]
+    },
+    {
+      "id": "shake_and_oats",
+      "name": "Protein shake with oats",
+      "kind": "breakfast",
+      "minutes": 5,
+      "quick": true,
+      "protein_g": 42,
+      "ingredients": [
+        { "id": "whey", "grams": 30 },
+        { "id": "milk", "grams": 300 },
+        { "id": "oats", "grams": 60 },
+        { "id": "bananas", "grams": 120 }
+      ]
+    },
+    {
+      "id": "chicken_burrito_bowl",
+      "name": "Chicken burrito bowl",
+      "kind": "main",
+      "minutes": 25,
+      "quick": false,
+      "protein_g": 52,
+      "ingredients": [
+        { "id": "chicken_breast", "grams": 150 },
+        { "id": "rice", "grams": 75 },
+        { "id": "black_beans", "grams": 80 },
+        { "id": "salsa", "grams": 40 },
+        { "id": "cheese", "grams": 20 }
+      ]
+    },
+    {
+      "id": "beef_stir_fry",
+      "name": "Beef & veggie stir-fry",
+      "kind": "main",
+      "minutes": 20,
+      "quick": false,
+      "protein_g": 33,
+      "ingredients": [
+        { "id": "ground_beef", "grams": 120 },
+        { "id": "stirfry_veg", "grams": 150 },
+        { "id": "rice", "grams": 75 },
+        { "id": "soy_sauce", "grams": 15 }
+      ]
+    },
+    {
+      "id": "beef_ragu",
+      "name": "Beef ragu pasta",
+      "kind": "main",
+      "minutes": 25,
+      "quick": false,
+      "protein_g": 43,
+      "ingredients": [
+        { "id": "ground_beef", "grams": 120 },
+        { "id": "pasta", "grams": 100 },
+        { "id": "marinara", "grams": 120 },
+        { "id": "cheese", "grams": 15 }
+      ]
+    },
+    {
+      "id": "tofu_fried_rice",
+      "name": "Tofu egg fried rice",
+      "kind": "main",
+      "minutes": 20,
+      "quick": false,
+      "protein_g": 51,
+      "ingredients": [
+        { "id": "tofu", "grams": 200 },
+        { "id": "eggs", "grams": 100 },
+        { "id": "rice", "grams": 75 },
+        { "id": "stirfry_veg", "grams": 100 },
+        { "id": "soy_sauce", "grams": 15 }
+      ]
+    },
+    {
+      "id": "chicken_quesadilla",
+      "name": "Chicken quesadilla",
+      "kind": "main",
+      "minutes": 15,
+      "quick": true,
+      "protein_g": 50,
+      "ingredients": [
+        { "id": "chicken_breast", "grams": 150 },
+        { "id": "tortillas", "grams": 90 },
+        { "id": "cheese", "grams": 30 },
+        { "id": "salsa", "grams": 30 }
+      ]
+    },
+    {
+      "id": "tuna_melt",
+      "name": "Tuna melt",
+      "kind": "main",
+      "minutes": 10,
+      "quick": true,
+      "protein_g": 43,
+      "ingredients": [
+        { "id": "tuna", "grams": 113 },
+        { "id": "bread", "grams": 64 },
+        { "id": "cheese", "grams": 30 }
+      ]
+    },
+    {
+      "id": "turkey_taco_bowl",
+      "name": "Turkey taco bowl",
+      "kind": "main",
+      "minutes": 20,
+      "quick": false,
+      "protein_g": 41,
+      "ingredients": [
+        { "id": "ground_turkey", "grams": 150 },
+        { "id": "rice", "grams": 75 },
+        { "id": "black_beans", "grams": 80 },
+        { "id": "salsa", "grams": 40 }
+      ]
+    },
+    {
+      "id": "sheet_pan_thighs",
+      "name": "Sheet-pan chicken & potatoes",
+      "kind": "main",
+      "minutes": 35,
+      "quick": false,
+      "protein_g": 46,
+      "ingredients": [
+        { "id": "chicken_thigh", "grams": 200 },
+        { "id": "potatoes", "grams": 250 },
+        { "id": "broccoli", "grams": 100 }
+      ]
+    },
+    {
+      "id": "lentil_dal",
+      "name": "Lentil spinach dal with rice",
+      "kind": "main",
+      "minutes": 30,
+      "quick": false,
+      "protein_g": 35,
+      "ingredients": [
+        { "id": "lentils", "grams": 80 },
+        { "id": "rice", "grams": 60 },
+        { "id": "spinach", "grams": 40 },
+        { "id": "greek_yogurt", "grams": 100 }
+      ]
+    },
+    {
+      "id": "tuna_chickpea_wrap",
+      "name": "Tuna chickpea wrap",
+      "kind": "main",
+      "minutes": 10,
+      "quick": true,
+      "protein_g": 51,
+      "ingredients": [
+        { "id": "tuna", "grams": 113 },
+        { "id": "chickpeas", "grams": 120 },
+        { "id": "tortillas", "grams": 90 },
+        { "id": "greek_yogurt", "grams": 50 }
+      ]
+    },
+    {
+      "id": "turkey_marinara",
+      "name": "Turkey marinara pasta",
+      "kind": "main",
+      "minutes": 20,
+      "quick": false,
+      "protein_g": 44,
+      "ingredients": [
+        { "id": "ground_turkey", "grams": 150 },
+        { "id": "pasta", "grams": 100 },
+        { "id": "marinara", "grams": 120 },
+        { "id": "spinach", "grams": 30 }
+      ]
+    },
+    {
+      "id": "teriyaki_chicken",
+      "name": "Teriyaki chicken & broccoli",
+      "kind": "main",
+      "minutes": 25,
+      "quick": false,
+      "protein_g": 44,
+      "ingredients": [
+        { "id": "chicken_thigh", "grams": 180 },
+        { "id": "rice", "grams": 75 },
+        { "id": "broccoli", "grams": 120 },
+        { "id": "soy_sauce", "grams": 15 }
+      ]
+    }
+  ],
+  "fun_goals": [
+    { "id": "football", "name": "Football game ticket", "cost_cents": 6000 },
+    { "id": "basketball", "name": "Basketball game with friends", "cost_cents": 3500 },
+    { "id": "concert", "name": "Concert ticket", "cost_cents": 8500 },
+    { "id": "chicago", "name": "Weekend trip to Chicago", "cost_cents": 18000 }
+  ],
+  "goal_labels": { "gain": "Build muscle", "lean": "Lean out", "maintain": "Stay healthy" },
+  "protein_factors": { "gain": 0.7, "lean": 0.75, "maintain": 0.55 },
+  "bowl_price_cents": 1350,
+  "takeout_meals_per_week": 14,
+  "stores": [
+    { "id": "kroger", "name": "Kroger", "available": true, "note": "Ann Arbor" },
+    { "id": "meijer", "name": "Meijer", "available": false, "note": "Coming soon" },
+    { "id": "costco", "name": "Costco", "available": false, "note": "Coming soon" }
+  ],
+  "plans": {
+    "50": [
+      {
+        "days": [
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "chicken_burrito_bowl", "lentil_dal"],
+          ["cottage_berry_bowl", "chicken_quesadilla", "tuna_melt"],
+          ["cottage_berry_bowl", "chicken_quesadilla", "turkey_taco_bowl"],
+          ["cottage_berry_bowl", "chicken_quesadilla", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "tuna_melt", "turkey_taco_bowl"]
+        ],
+        "target_g": 50,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["egg_bean_burrito", "chicken_quesadilla", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "tuna_melt", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "chicken_quesadilla", "tuna_melt"],
+          ["egg_bean_burrito", "chicken_burrito_bowl", "lentil_dal"],
+          ["egg_bean_burrito", "chicken_burrito_bowl", "lentil_dal"],
+          ["pb_overnight_oats", "tuna_melt", "turkey_taco_bowl"]
+        ],
+        "target_g": 50,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["cottage_berry_bowl", "sheet_pan_thighs", "turkey_marinara"],
+          ["yogurt_oat_bowl", "sheet_pan_thighs", "teriyaki_chicken"],
+          ["pb_overnight_oats", "teriyaki_chicken", "turkey_marinara"],
+          ["pb_overnight_oats", "tofu_fried_rice", "lentil_dal"],
+          ["pb_overnight_oats", "tofu_fried_rice", "lentil_dal"],
+          ["cottage_berry_bowl", "tofu_fried_rice", "turkey_marinara"],
+          ["cottage_berry_bowl", "sheet_pan_thighs", "teriyaki_chicken"]
+        ],
+        "target_g": 50,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["egg_white_scramble", "chicken_burrito_bowl", "lentil_dal"],
+          ["egg_bean_burrito", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "chicken_quesadilla", "tuna_melt"],
+          ["yogurt_oat_bowl", "chicken_quesadilla", "tuna_melt"],
+          ["egg_white_scramble", "tuna_melt", "turkey_taco_bowl"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "lentil_dal"],
+          ["egg_bean_burrito", "chicken_quesadilla", "turkey_taco_bowl"]
+        ],
+        "target_g": 50,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["egg_bean_burrito", "chicken_burrito_bowl", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_bean_burrito", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["pb_overnight_oats", "chicken_quesadilla", "turkey_taco_bowl"],
+          ["egg_bean_burrito", "tuna_chickpea_wrap", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"]
+        ],
+        "target_g": 50,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["pb_overnight_oats", "tofu_fried_rice", "beef_stir_fry"],
+          ["pb_overnight_oats", "tofu_fried_rice", "beef_stir_fry"],
+          ["pb_overnight_oats", "tofu_fried_rice", "beef_stir_fry"],
+          ["egg_bean_burrito", "tuna_melt", "turkey_taco_bowl"],
+          ["egg_bean_burrito", "beef_ragu", "turkey_taco_bowl"],
+          ["egg_bean_burrito", "tuna_melt", "turkey_taco_bowl"],
+          ["yogurt_oat_bowl", "beef_ragu", "tuna_melt"]
+        ],
+        "target_g": 50,
+        "shortfall_g": 0
+      }
+    ],
+    "60": [
+      {
+        "days": [
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "chicken_burrito_bowl", "lentil_dal"],
+          ["cottage_berry_bowl", "chicken_quesadilla", "tuna_melt"],
+          ["cottage_berry_bowl", "chicken_quesadilla", "turkey_taco_bowl"],
+          ["cottage_berry_bowl", "chicken_quesadilla", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "tuna_melt", "turkey_taco_bowl"]
+        ],
+        "target_g": 60,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["egg_bean_burrito", "chicken_quesadilla", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "tuna_melt", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "chicken_quesadilla", "tuna_melt"],
+          ["egg_bean_burrito", "chicken_burrito_bowl", "lentil_dal"],
+          ["egg_bean_burrito", "chicken_burrito_bowl", "lentil_dal"],
+          ["pb_overnight_oats", "tuna_melt", "turkey_taco_bowl"]
+        ],
+        "target_g": 60,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["cottage_berry_bowl", "sheet_pan_thighs", "turkey_marinara"],
+          ["yogurt_oat_bowl", "sheet_pan_thighs", "teriyaki_chicken"],
+          ["pb_overnight_oats", "teriyaki_chicken", "turkey_marinara"],
+          ["pb_overnight_oats", "tofu_fried_rice", "lentil_dal"],
+          ["pb_overnight_oats", "tofu_fried_rice", "lentil_dal"],
+          ["cottage_berry_bowl", "tofu_fried_rice", "turkey_marinara"],
+          ["cottage_berry_bowl", "sheet_pan_thighs", "teriyaki_chicken"]
+        ],
+        "target_g": 60,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["egg_white_scramble", "chicken_burrito_bowl", "lentil_dal"],
+          ["egg_bean_burrito", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "chicken_quesadilla", "tuna_melt"],
+          ["yogurt_oat_bowl", "chicken_quesadilla", "tuna_melt"],
+          ["egg_white_scramble", "tuna_melt", "turkey_taco_bowl"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "lentil_dal"],
+          ["egg_bean_burrito", "chicken_quesadilla", "turkey_taco_bowl"]
+        ],
+        "target_g": 60,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["egg_bean_burrito", "chicken_burrito_bowl", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_bean_burrito", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["pb_overnight_oats", "chicken_quesadilla", "turkey_taco_bowl"],
+          ["egg_bean_burrito", "tuna_chickpea_wrap", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"]
+        ],
+        "target_g": 60,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["pb_overnight_oats", "tofu_fried_rice", "beef_stir_fry"],
+          ["pb_overnight_oats", "tofu_fried_rice", "beef_stir_fry"],
+          ["pb_overnight_oats", "tofu_fried_rice", "beef_stir_fry"],
+          ["egg_bean_burrito", "tuna_melt", "turkey_taco_bowl"],
+          ["egg_bean_burrito", "beef_ragu", "turkey_taco_bowl"],
+          ["egg_bean_burrito", "tuna_melt", "turkey_taco_bowl"],
+          ["yogurt_oat_bowl", "beef_ragu", "tuna_melt"]
+        ],
+        "target_g": 60,
+        "shortfall_g": 0
+      }
+    ],
+    "70": [
+      {
+        "days": [
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "chicken_burrito_bowl", "lentil_dal"],
+          ["cottage_berry_bowl", "chicken_quesadilla", "tuna_melt"],
+          ["cottage_berry_bowl", "chicken_quesadilla", "turkey_taco_bowl"],
+          ["cottage_berry_bowl", "chicken_quesadilla", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "tuna_melt", "turkey_taco_bowl"]
+        ],
+        "target_g": 70,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["egg_bean_burrito", "chicken_quesadilla", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "tuna_melt", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "chicken_quesadilla", "tuna_melt"],
+          ["egg_bean_burrito", "chicken_burrito_bowl", "lentil_dal"],
+          ["egg_bean_burrito", "chicken_burrito_bowl", "lentil_dal"],
+          ["pb_overnight_oats", "tuna_melt", "turkey_taco_bowl"]
+        ],
+        "target_g": 70,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["cottage_berry_bowl", "sheet_pan_thighs", "turkey_marinara"],
+          ["yogurt_oat_bowl", "sheet_pan_thighs", "teriyaki_chicken"],
+          ["pb_overnight_oats", "teriyaki_chicken", "turkey_marinara"],
+          ["pb_overnight_oats", "tofu_fried_rice", "lentil_dal"],
+          ["pb_overnight_oats", "tofu_fried_rice", "lentil_dal"],
+          ["cottage_berry_bowl", "tofu_fried_rice", "turkey_marinara"],
+          ["cottage_berry_bowl", "sheet_pan_thighs", "teriyaki_chicken"]
+        ],
+        "target_g": 70,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["egg_white_scramble", "chicken_burrito_bowl", "lentil_dal"],
+          ["egg_bean_burrito", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "chicken_quesadilla", "tuna_melt"],
+          ["yogurt_oat_bowl", "chicken_quesadilla", "tuna_melt"],
+          ["egg_white_scramble", "tuna_melt", "turkey_taco_bowl"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "lentil_dal"],
+          ["egg_bean_burrito", "chicken_quesadilla", "turkey_taco_bowl"]
+        ],
+        "target_g": 70,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["egg_bean_burrito", "chicken_burrito_bowl", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_bean_burrito", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["pb_overnight_oats", "chicken_quesadilla", "turkey_taco_bowl"],
+          ["egg_bean_burrito", "tuna_chickpea_wrap", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"]
+        ],
+        "target_g": 70,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["pb_overnight_oats", "tofu_fried_rice", "beef_stir_fry"],
+          ["pb_overnight_oats", "tofu_fried_rice", "beef_stir_fry"],
+          ["pb_overnight_oats", "tofu_fried_rice", "beef_stir_fry"],
+          ["egg_bean_burrito", "tuna_melt", "turkey_taco_bowl"],
+          ["egg_bean_burrito", "beef_ragu", "turkey_taco_bowl"],
+          ["egg_bean_burrito", "tuna_melt", "turkey_taco_bowl"],
+          ["yogurt_oat_bowl", "beef_ragu", "tuna_melt"]
+        ],
+        "target_g": 70,
+        "shortfall_g": 0
+      }
+    ],
+    "80": [
+      {
+        "days": [
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "chicken_burrito_bowl", "lentil_dal"],
+          ["cottage_berry_bowl", "chicken_quesadilla", "tuna_melt"],
+          ["cottage_berry_bowl", "chicken_quesadilla", "turkey_taco_bowl"],
+          ["cottage_berry_bowl", "chicken_quesadilla", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "tuna_melt", "turkey_taco_bowl"]
+        ],
+        "target_g": 80,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["egg_bean_burrito", "chicken_quesadilla", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "tuna_melt", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "chicken_quesadilla", "tuna_melt"],
+          ["egg_bean_burrito", "chicken_burrito_bowl", "lentil_dal"],
+          ["egg_bean_burrito", "chicken_burrito_bowl", "lentil_dal"],
+          ["pb_overnight_oats", "tuna_melt", "turkey_taco_bowl"]
+        ],
+        "target_g": 80,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["cottage_berry_bowl", "sheet_pan_thighs", "turkey_marinara"],
+          ["yogurt_oat_bowl", "sheet_pan_thighs", "teriyaki_chicken"],
+          ["pb_overnight_oats", "teriyaki_chicken", "turkey_marinara"],
+          ["pb_overnight_oats", "tofu_fried_rice", "lentil_dal"],
+          ["pb_overnight_oats", "tofu_fried_rice", "lentil_dal"],
+          ["cottage_berry_bowl", "tofu_fried_rice", "turkey_marinara"],
+          ["cottage_berry_bowl", "sheet_pan_thighs", "teriyaki_chicken"]
+        ],
+        "target_g": 80,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["egg_white_scramble", "chicken_burrito_bowl", "lentil_dal"],
+          ["egg_bean_burrito", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "chicken_quesadilla", "tuna_melt"],
+          ["yogurt_oat_bowl", "chicken_quesadilla", "tuna_melt"],
+          ["egg_white_scramble", "tuna_melt", "turkey_taco_bowl"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "lentil_dal"],
+          ["egg_bean_burrito", "chicken_quesadilla", "turkey_taco_bowl"]
+        ],
+        "target_g": 80,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["egg_bean_burrito", "chicken_burrito_bowl", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_bean_burrito", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["pb_overnight_oats", "chicken_quesadilla", "turkey_taco_bowl"],
+          ["egg_bean_burrito", "tuna_chickpea_wrap", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"]
+        ],
+        "target_g": 80,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["pb_overnight_oats", "tofu_fried_rice", "beef_stir_fry"],
+          ["pb_overnight_oats", "tofu_fried_rice", "beef_stir_fry"],
+          ["pb_overnight_oats", "tofu_fried_rice", "beef_stir_fry"],
+          ["egg_bean_burrito", "tuna_melt", "turkey_taco_bowl"],
+          ["egg_bean_burrito", "beef_ragu", "turkey_taco_bowl"],
+          ["egg_bean_burrito", "tuna_melt", "turkey_taco_bowl"],
+          ["yogurt_oat_bowl", "beef_ragu", "tuna_melt"]
+        ],
+        "target_g": 80,
+        "shortfall_g": 0
+      }
+    ],
+    "90": [
+      {
+        "days": [
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "chicken_burrito_bowl", "lentil_dal"],
+          ["cottage_berry_bowl", "chicken_quesadilla", "tuna_melt"],
+          ["cottage_berry_bowl", "chicken_quesadilla", "turkey_taco_bowl"],
+          ["cottage_berry_bowl", "chicken_quesadilla", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "tuna_melt", "turkey_taco_bowl"]
+        ],
+        "target_g": 90,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["egg_bean_burrito", "chicken_quesadilla", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "tuna_melt", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "chicken_quesadilla", "tuna_melt"],
+          ["egg_bean_burrito", "chicken_burrito_bowl", "lentil_dal"],
+          ["egg_bean_burrito", "chicken_burrito_bowl", "lentil_dal"],
+          ["pb_overnight_oats", "tuna_melt", "turkey_taco_bowl"]
+        ],
+        "target_g": 90,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["cottage_berry_bowl", "sheet_pan_thighs", "turkey_marinara"],
+          ["yogurt_oat_bowl", "sheet_pan_thighs", "teriyaki_chicken"],
+          ["pb_overnight_oats", "teriyaki_chicken", "turkey_marinara"],
+          ["pb_overnight_oats", "tofu_fried_rice", "lentil_dal"],
+          ["pb_overnight_oats", "tofu_fried_rice", "lentil_dal"],
+          ["cottage_berry_bowl", "tofu_fried_rice", "turkey_marinara"],
+          ["cottage_berry_bowl", "sheet_pan_thighs", "teriyaki_chicken"]
+        ],
+        "target_g": 90,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["egg_white_scramble", "chicken_burrito_bowl", "lentil_dal"],
+          ["egg_bean_burrito", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "chicken_quesadilla", "tuna_melt"],
+          ["yogurt_oat_bowl", "chicken_quesadilla", "tuna_melt"],
+          ["egg_white_scramble", "tuna_melt", "turkey_taco_bowl"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "lentil_dal"],
+          ["egg_bean_burrito", "chicken_quesadilla", "turkey_taco_bowl"]
+        ],
+        "target_g": 90,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["egg_bean_burrito", "chicken_burrito_bowl", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_bean_burrito", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["pb_overnight_oats", "chicken_quesadilla", "turkey_taco_bowl"],
+          ["egg_bean_burrito", "tuna_chickpea_wrap", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"]
+        ],
+        "target_g": 90,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["pb_overnight_oats", "tofu_fried_rice", "beef_stir_fry"],
+          ["pb_overnight_oats", "tofu_fried_rice", "beef_stir_fry"],
+          ["pb_overnight_oats", "tofu_fried_rice", "beef_stir_fry"],
+          ["egg_bean_burrito", "tuna_melt", "turkey_taco_bowl"],
+          ["egg_bean_burrito", "beef_ragu", "turkey_taco_bowl"],
+          ["egg_bean_burrito", "tuna_melt", "turkey_taco_bowl"],
+          ["yogurt_oat_bowl", "beef_ragu", "tuna_melt"]
+        ],
+        "target_g": 90,
+        "shortfall_g": 0
+      }
+    ],
+    "100": [
+      {
+        "days": [
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "chicken_burrito_bowl", "lentil_dal"],
+          ["cottage_berry_bowl", "chicken_quesadilla", "tuna_melt"],
+          ["cottage_berry_bowl", "chicken_quesadilla", "turkey_taco_bowl"],
+          ["cottage_berry_bowl", "chicken_quesadilla", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "tuna_melt", "turkey_taco_bowl"]
+        ],
+        "target_g": 100,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["egg_bean_burrito", "chicken_quesadilla", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "tuna_melt", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "chicken_quesadilla", "tuna_melt"],
+          ["egg_bean_burrito", "chicken_burrito_bowl", "lentil_dal"],
+          ["egg_bean_burrito", "chicken_burrito_bowl", "lentil_dal"],
+          ["pb_overnight_oats", "tuna_melt", "turkey_taco_bowl"]
+        ],
+        "target_g": 100,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["cottage_berry_bowl", "sheet_pan_thighs", "turkey_marinara"],
+          ["yogurt_oat_bowl", "sheet_pan_thighs", "teriyaki_chicken"],
+          ["pb_overnight_oats", "teriyaki_chicken", "turkey_marinara"],
+          ["pb_overnight_oats", "tofu_fried_rice", "lentil_dal"],
+          ["pb_overnight_oats", "tofu_fried_rice", "lentil_dal"],
+          ["cottage_berry_bowl", "tofu_fried_rice", "turkey_marinara"],
+          ["cottage_berry_bowl", "sheet_pan_thighs", "teriyaki_chicken"]
+        ],
+        "target_g": 100,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["egg_white_scramble", "chicken_burrito_bowl", "lentil_dal"],
+          ["egg_bean_burrito", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "chicken_quesadilla", "tuna_melt"],
+          ["yogurt_oat_bowl", "chicken_quesadilla", "tuna_melt"],
+          ["egg_white_scramble", "tuna_melt", "turkey_taco_bowl"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "lentil_dal"],
+          ["egg_bean_burrito", "chicken_quesadilla", "turkey_taco_bowl"]
+        ],
+        "target_g": 100,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["egg_bean_burrito", "chicken_burrito_bowl", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_bean_burrito", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["pb_overnight_oats", "chicken_quesadilla", "turkey_taco_bowl"],
+          ["egg_bean_burrito", "tuna_chickpea_wrap", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"]
+        ],
+        "target_g": 100,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["pb_overnight_oats", "tofu_fried_rice", "beef_stir_fry"],
+          ["pb_overnight_oats", "tofu_fried_rice", "beef_stir_fry"],
+          ["pb_overnight_oats", "tofu_fried_rice", "beef_stir_fry"],
+          ["egg_bean_burrito", "tuna_melt", "turkey_taco_bowl"],
+          ["egg_bean_burrito", "beef_ragu", "turkey_taco_bowl"],
+          ["egg_bean_burrito", "tuna_melt", "turkey_taco_bowl"],
+          ["yogurt_oat_bowl", "beef_ragu", "tuna_melt"]
+        ],
+        "target_g": 100,
+        "shortfall_g": 0
+      }
+    ],
+    "110": [
+      {
+        "days": [
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "chicken_burrito_bowl", "lentil_dal"],
+          ["cottage_berry_bowl", "chicken_quesadilla", "tuna_melt"],
+          ["cottage_berry_bowl", "chicken_quesadilla", "turkey_taco_bowl"],
+          ["cottage_berry_bowl", "chicken_quesadilla", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "tuna_melt", "turkey_taco_bowl"]
+        ],
+        "target_g": 110,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["egg_bean_burrito", "chicken_quesadilla", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "tuna_melt", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "chicken_quesadilla", "tuna_melt"],
+          ["egg_bean_burrito", "chicken_burrito_bowl", "lentil_dal"],
+          ["egg_bean_burrito", "chicken_burrito_bowl", "lentil_dal"],
+          ["pb_overnight_oats", "tuna_melt", "turkey_taco_bowl"]
+        ],
+        "target_g": 110,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["cottage_berry_bowl", "sheet_pan_thighs", "turkey_marinara"],
+          ["yogurt_oat_bowl", "sheet_pan_thighs", "teriyaki_chicken"],
+          ["pb_overnight_oats", "teriyaki_chicken", "turkey_marinara"],
+          ["pb_overnight_oats", "tofu_fried_rice", "lentil_dal"],
+          ["pb_overnight_oats", "tofu_fried_rice", "lentil_dal"],
+          ["cottage_berry_bowl", "tofu_fried_rice", "turkey_marinara"],
+          ["cottage_berry_bowl", "sheet_pan_thighs", "teriyaki_chicken"]
+        ],
+        "target_g": 110,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["egg_white_scramble", "chicken_burrito_bowl", "lentil_dal"],
+          ["egg_bean_burrito", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "chicken_quesadilla", "tuna_melt"],
+          ["yogurt_oat_bowl", "chicken_quesadilla", "tuna_melt"],
+          ["egg_white_scramble", "tuna_melt", "turkey_taco_bowl"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "lentil_dal"],
+          ["egg_bean_burrito", "chicken_quesadilla", "turkey_taco_bowl"]
+        ],
+        "target_g": 110,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["egg_bean_burrito", "chicken_burrito_bowl", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_bean_burrito", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["pb_overnight_oats", "chicken_quesadilla", "turkey_taco_bowl"],
+          ["egg_bean_burrito", "tuna_chickpea_wrap", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"]
+        ],
+        "target_g": 110,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["pb_overnight_oats", "tofu_fried_rice", "beef_stir_fry"],
+          ["pb_overnight_oats", "tofu_fried_rice", "beef_stir_fry"],
+          ["pb_overnight_oats", "tofu_fried_rice", "beef_stir_fry"],
+          ["egg_bean_burrito", "tuna_melt", "turkey_taco_bowl"],
+          ["egg_bean_burrito", "beef_ragu", "turkey_taco_bowl"],
+          ["egg_bean_burrito", "tuna_melt", "turkey_taco_bowl"],
+          ["yogurt_oat_bowl", "beef_ragu", "tuna_melt"]
+        ],
+        "target_g": 110,
+        "shortfall_g": 0
+      }
+    ],
+    "120": [
+      {
+        "days": [
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "chicken_burrito_bowl", "lentil_dal"],
+          ["cottage_berry_bowl", "chicken_quesadilla", "tuna_melt"],
+          ["cottage_berry_bowl", "chicken_quesadilla", "turkey_taco_bowl"],
+          ["cottage_berry_bowl", "chicken_quesadilla", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "tuna_melt", "turkey_taco_bowl"]
+        ],
+        "target_g": 120,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["egg_bean_burrito", "chicken_quesadilla", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "tuna_melt", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "chicken_quesadilla", "tuna_melt"],
+          ["egg_bean_burrito", "chicken_burrito_bowl", "lentil_dal"],
+          ["egg_bean_burrito", "chicken_burrito_bowl", "lentil_dal"],
+          ["pb_overnight_oats", "tuna_melt", "turkey_taco_bowl"]
+        ],
+        "target_g": 120,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["cottage_berry_bowl", "sheet_pan_thighs", "turkey_marinara"],
+          ["yogurt_oat_bowl", "sheet_pan_thighs", "teriyaki_chicken"],
+          ["pb_overnight_oats", "teriyaki_chicken", "turkey_marinara"],
+          ["pb_overnight_oats", "tofu_fried_rice", "lentil_dal"],
+          ["pb_overnight_oats", "tofu_fried_rice", "lentil_dal"],
+          ["cottage_berry_bowl", "tofu_fried_rice", "turkey_marinara"],
+          ["cottage_berry_bowl", "sheet_pan_thighs", "teriyaki_chicken"]
+        ],
+        "target_g": 120,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["egg_white_scramble", "chicken_burrito_bowl", "lentil_dal"],
+          ["egg_bean_burrito", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "chicken_quesadilla", "tuna_melt"],
+          ["yogurt_oat_bowl", "chicken_quesadilla", "tuna_melt"],
+          ["egg_white_scramble", "tuna_melt", "turkey_taco_bowl"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "lentil_dal"],
+          ["egg_bean_burrito", "chicken_quesadilla", "turkey_taco_bowl"]
+        ],
+        "target_g": 120,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["egg_bean_burrito", "chicken_burrito_bowl", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_bean_burrito", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["pb_overnight_oats", "chicken_quesadilla", "turkey_taco_bowl"],
+          ["egg_bean_burrito", "tuna_chickpea_wrap", "turkey_taco_bowl"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"]
+        ],
+        "target_g": 120,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["yogurt_oat_bowl", "tofu_fried_rice", "lentil_dal"],
+          ["egg_white_scramble", "tofu_fried_rice", "beef_stir_fry"],
+          ["egg_white_scramble", "tofu_fried_rice", "beef_stir_fry"],
+          ["egg_bean_burrito", "tuna_melt", "turkey_taco_bowl"],
+          ["egg_bean_burrito", "tuna_melt", "turkey_taco_bowl"],
+          ["egg_bean_burrito", "tuna_melt", "turkey_taco_bowl"],
+          ["egg_white_scramble", "tuna_chickpea_wrap", "beef_stir_fry"]
+        ],
+        "target_g": 120,
+        "shortfall_g": 0
+      }
+    ],
+    "130": [
+      {
+        "days": [
+          ["egg_white_scramble", "chicken_burrito_bowl", "tuna_melt"],
+          ["egg_bean_burrito", "chicken_burrito_bowl", "tuna_melt"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "tofu_fried_rice", "chicken_quesadilla"],
+          ["yogurt_oat_bowl", "tofu_fried_rice", "chicken_quesadilla"],
+          ["yogurt_oat_bowl", "tofu_fried_rice", "chicken_quesadilla"],
+          ["egg_white_scramble", "tuna_chickpea_wrap", "tuna_melt"]
+        ],
+        "target_g": 130,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["yogurt_oat_bowl", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "tuna_chickpea_wrap", "turkey_taco_bowl"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "turkey_taco_bowl"],
+          ["egg_bean_burrito", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_bean_burrito", "chicken_burrito_bowl", "turkey_taco_bowl"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "lentil_dal"],
+          ["egg_bean_burrito", "chicken_quesadilla", "tuna_melt"]
+        ],
+        "target_g": 130,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["cottage_berry_bowl", "tofu_fried_rice", "sheet_pan_thighs"],
+          ["cottage_berry_bowl", "tofu_fried_rice", "chicken_quesadilla"],
+          ["egg_bean_burrito", "chicken_quesadilla", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "teriyaki_chicken"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "teriyaki_chicken"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "teriyaki_chicken"],
+          ["cottage_berry_bowl", "tofu_fried_rice", "sheet_pan_thighs"]
+        ],
+        "target_g": 130,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["egg_white_scramble", "chicken_burrito_bowl", "tuna_melt"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "tofu_fried_rice", "chicken_quesadilla"],
+          ["yogurt_oat_bowl", "tofu_fried_rice", "chicken_quesadilla"],
+          ["egg_white_scramble", "tuna_chickpea_wrap", "tuna_melt"],
+          ["egg_bean_burrito", "chicken_burrito_bowl", "tuna_melt"],
+          ["yogurt_oat_bowl", "tofu_fried_rice", "chicken_quesadilla"]
+        ],
+        "target_g": 130,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["egg_bean_burrito", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"],
+          ["yogurt_oat_bowl", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_bean_burrito", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_bean_burrito", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["pb_overnight_oats", "tofu_fried_rice", "chicken_quesadilla"],
+          ["pb_overnight_oats", "chicken_burrito_bowl", "lentil_dal"]
+        ],
+        "target_g": 130,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["egg_white_scramble", "chicken_burrito_bowl", "turkey_taco_bowl"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "turkey_taco_bowl"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "turkey_taco_bowl"],
+          ["egg_bean_burrito", "tofu_fried_rice", "tuna_melt"],
+          ["egg_bean_burrito", "tofu_fried_rice", "tuna_melt"],
+          ["egg_bean_burrito", "chicken_quesadilla", "tuna_melt"],
+          ["yogurt_oat_bowl", "tofu_fried_rice", "chicken_quesadilla"]
+        ],
+        "target_g": 130,
+        "shortfall_g": 0
+      }
+    ],
+    "140": [
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "tuna_melt"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "tuna_melt"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["yogurt_oat_bowl", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"]
+        ],
+        "target_g": 140,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["egg_bean_burrito", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "tuna_melt"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "tuna_melt"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"]
+        ],
+        "target_g": 140,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["shake_and_oats", "tofu_fried_rice", "chicken_quesadilla"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "turkey_marinara"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "turkey_marinara"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "turkey_marinara"],
+          ["shake_and_oats", "tofu_fried_rice", "chicken_quesadilla"]
+        ],
+        "target_g": 140,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "tuna_melt"],
+          ["yogurt_oat_bowl", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "tuna_melt"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"]
+        ],
+        "target_g": 140,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "tuna_melt"],
+          ["egg_bean_burrito", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "tuna_melt"]
+        ],
+        "target_g": 140,
+        "shortfall_g": 0
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "tuna_melt"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "tuna_melt"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["egg_bean_burrito", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"]
+        ],
+        "target_g": 140,
+        "shortfall_g": 0
+      }
+    ],
+    "150": [
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"]
+        ],
+        "target_g": 150,
+        "shortfall_g": 59
+      },
+      {
+        "days": [
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"]
+        ],
+        "target_g": 150,
+        "shortfall_g": 59
+      },
+      {
+        "days": [
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"]
+        ],
+        "target_g": 150,
+        "shortfall_g": 59
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"]
+        ],
+        "target_g": 150,
+        "shortfall_g": 59
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"]
+        ],
+        "target_g": 150,
+        "shortfall_g": 59
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"]
+        ],
+        "target_g": 150,
+        "shortfall_g": 59
+      }
+    ],
+    "160": [
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"]
+        ],
+        "target_g": 160,
+        "shortfall_g": 129
+      },
+      {
+        "days": [
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"]
+        ],
+        "target_g": 160,
+        "shortfall_g": 129
+      },
+      {
+        "days": [
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"]
+        ],
+        "target_g": 160,
+        "shortfall_g": 129
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"]
+        ],
+        "target_g": 160,
+        "shortfall_g": 129
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"]
+        ],
+        "target_g": 160,
+        "shortfall_g": 129
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"]
+        ],
+        "target_g": 160,
+        "shortfall_g": 129
+      }
+    ],
+    "170": [
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"]
+        ],
+        "target_g": 170,
+        "shortfall_g": 199
+      },
+      {
+        "days": [
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"]
+        ],
+        "target_g": 170,
+        "shortfall_g": 199
+      },
+      {
+        "days": [
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"]
+        ],
+        "target_g": 170,
+        "shortfall_g": 199
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"]
+        ],
+        "target_g": 170,
+        "shortfall_g": 199
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"]
+        ],
+        "target_g": 170,
+        "shortfall_g": 199
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"]
+        ],
+        "target_g": 170,
+        "shortfall_g": 199
+      }
+    ],
+    "180": [
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"]
+        ],
+        "target_g": 180,
+        "shortfall_g": 269
+      },
+      {
+        "days": [
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"]
+        ],
+        "target_g": 180,
+        "shortfall_g": 269
+      },
+      {
+        "days": [
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"]
+        ],
+        "target_g": 180,
+        "shortfall_g": 269
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"]
+        ],
+        "target_g": 180,
+        "shortfall_g": 269
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"]
+        ],
+        "target_g": 180,
+        "shortfall_g": 269
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"]
+        ],
+        "target_g": 180,
+        "shortfall_g": 269
+      }
+    ],
+    "190": [
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"]
+        ],
+        "target_g": 190,
+        "shortfall_g": 339
+      },
+      {
+        "days": [
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"]
+        ],
+        "target_g": 190,
+        "shortfall_g": 339
+      },
+      {
+        "days": [
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"]
+        ],
+        "target_g": 190,
+        "shortfall_g": 339
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"]
+        ],
+        "target_g": 190,
+        "shortfall_g": 339
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"]
+        ],
+        "target_g": 190,
+        "shortfall_g": 339
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"]
+        ],
+        "target_g": 190,
+        "shortfall_g": 339
+      }
+    ],
+    "200": [
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"]
+        ],
+        "target_g": 200,
+        "shortfall_g": 409
+      },
+      {
+        "days": [
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"]
+        ],
+        "target_g": 200,
+        "shortfall_g": 409
+      },
+      {
+        "days": [
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"]
+        ],
+        "target_g": 200,
+        "shortfall_g": 409
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"]
+        ],
+        "target_g": 200,
+        "shortfall_g": 409
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"]
+        ],
+        "target_g": 200,
+        "shortfall_g": 409
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"]
+        ],
+        "target_g": 200,
+        "shortfall_g": 409
+      }
+    ],
+    "210": [
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"]
+        ],
+        "target_g": 210,
+        "shortfall_g": 479
+      },
+      {
+        "days": [
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"]
+        ],
+        "target_g": 210,
+        "shortfall_g": 479
+      },
+      {
+        "days": [
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"]
+        ],
+        "target_g": 210,
+        "shortfall_g": 479
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"]
+        ],
+        "target_g": 210,
+        "shortfall_g": 479
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"]
+        ],
+        "target_g": 210,
+        "shortfall_g": 479
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"]
+        ],
+        "target_g": 210,
+        "shortfall_g": 479
+      }
+    ],
+    "220": [
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"]
+        ],
+        "target_g": 220,
+        "shortfall_g": 549
+      },
+      {
+        "days": [
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"]
+        ],
+        "target_g": 220,
+        "shortfall_g": 549
+      },
+      {
+        "days": [
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"]
+        ],
+        "target_g": 220,
+        "shortfall_g": 549
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"]
+        ],
+        "target_g": 220,
+        "shortfall_g": 549
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"]
+        ],
+        "target_g": 220,
+        "shortfall_g": 549
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"]
+        ],
+        "target_g": 220,
+        "shortfall_g": 549
+      }
+    ],
+    "230": [
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"]
+        ],
+        "target_g": 230,
+        "shortfall_g": 619
+      },
+      {
+        "days": [
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"]
+        ],
+        "target_g": 230,
+        "shortfall_g": 619
+      },
+      {
+        "days": [
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"]
+        ],
+        "target_g": 230,
+        "shortfall_g": 619
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"]
+        ],
+        "target_g": 230,
+        "shortfall_g": 619
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"]
+        ],
+        "target_g": 230,
+        "shortfall_g": 619
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"]
+        ],
+        "target_g": 230,
+        "shortfall_g": 619
+      }
+    ],
+    "240": [
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"]
+        ],
+        "target_g": 240,
+        "shortfall_g": 689
+      },
+      {
+        "days": [
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"]
+        ],
+        "target_g": 240,
+        "shortfall_g": 689
+      },
+      {
+        "days": [
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"]
+        ],
+        "target_g": 240,
+        "shortfall_g": 689
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"]
+        ],
+        "target_g": 240,
+        "shortfall_g": 689
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"]
+        ],
+        "target_g": 240,
+        "shortfall_g": 689
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"]
+        ],
+        "target_g": 240,
+        "shortfall_g": 689
+      }
+    ],
+    "250": [
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"]
+        ],
+        "target_g": 250,
+        "shortfall_g": 759
+      },
+      {
+        "days": [
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"]
+        ],
+        "target_g": 250,
+        "shortfall_g": 759
+      },
+      {
+        "days": [
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"]
+        ],
+        "target_g": 250,
+        "shortfall_g": 759
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"]
+        ],
+        "target_g": 250,
+        "shortfall_g": 759
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"]
+        ],
+        "target_g": 250,
+        "shortfall_g": 759
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"]
+        ],
+        "target_g": 250,
+        "shortfall_g": 759
+      }
+    ],
+    "260": [
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"]
+        ],
+        "target_g": 260,
+        "shortfall_g": 829
+      },
+      {
+        "days": [
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"]
+        ],
+        "target_g": 260,
+        "shortfall_g": 829
+      },
+      {
+        "days": [
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"]
+        ],
+        "target_g": 260,
+        "shortfall_g": 829
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"]
+        ],
+        "target_g": 260,
+        "shortfall_g": 829
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"]
+        ],
+        "target_g": 260,
+        "shortfall_g": 829
+      },
+      {
+        "days": [
+          ["shake_and_oats", "chicken_burrito_bowl", "chicken_quesadilla"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "chicken_burrito_bowl", "sheet_pan_thighs"],
+          ["egg_white_scramble", "tofu_fried_rice", "chicken_quesadilla"],
+          ["pb_overnight_oats", "tofu_fried_rice", "tuna_chickpea_wrap"],
+          ["shake_and_oats", "tuna_chickpea_wrap", "chicken_quesadilla"],
+          ["shake_and_oats", "tofu_fried_rice", "tuna_chickpea_wrap"]
+        ],
+        "target_g": 260,
+        "shortfall_g": 829
+      }
+    ]
+  },
+  "parity": {
+    "cart_totals": {
+      "50": 6639,
+      "60": 6639,
+      "70": 6639,
+      "80": 6639,
+      "90": 6639,
+      "100": 6639,
+      "110": 6639,
+      "120": 6639,
+      "130": 7006,
+      "140": 10569,
+      "150": 11520,
+      "160": 11520,
+      "170": 11520,
+      "180": 11520,
+      "190": 11520,
+      "200": 11520,
+      "210": 11520,
+      "220": 11520,
+      "230": 11520,
+      "240": 11520,
+      "250": 11520,
+      "260": 11520
+    },
+    "quick_meal_costs": {
+      "egg_bean_burrito": 181,
+      "yogurt_oat_bowl": 183,
+      "pb_overnight_oats": 148,
+      "egg_white_scramble": 228,
+      "cottage_berry_bowl": 220,
+      "shake_and_oats": 164,
+      "chicken_quesadilla": 228,
+      "tuna_melt": 189,
+      "tuna_chickpea_wrap": 262
+    },
+    "targets": {
+      "90-gain": 60,
+      "90-lean": 70,
+      "90-maintain": 50,
+      "133-gain": 90,
+      "133-lean": 100,
+      "133-maintain": 70,
+      "150-gain": 110,
+      "150-lean": 110,
+      "150-maintain": 80,
+      "170-gain": 120,
+      "170-lean": 130,
+      "170-maintain": 90,
+      "211-gain": 150,
+      "211-lean": 160,
+      "211-maintain": 120,
+      "350-gain": 240,
+      "350-lean": 260,
+      "350-maintain": 190
+    }
+  }
+}

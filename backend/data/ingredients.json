@@ -1,0 +1,250 @@
+[
+  {
+    "id": "chicken_breast",
+    "name": "Chicken breast",
+    "search_term": "boneless skinless chicken breast",
+    "preferred_size": "3 lb",
+    "grams_per_serving": 150,
+    "protein_per_100g": 23.0
+  },
+  {
+    "id": "chicken_thigh",
+    "name": "Chicken thighs",
+    "search_term": "boneless skinless chicken thighs",
+    "preferred_size": "3 lb",
+    "grams_per_serving": 180,
+    "protein_per_100g": 19.0
+  },
+  {
+    "id": "ground_beef",
+    "name": "Ground beef 93%",
+    "search_term": "93% lean ground beef",
+    "preferred_size": "2 lb",
+    "grams_per_serving": 120,
+    "protein_per_100g": 20.0
+  },
+  {
+    "id": "ground_turkey",
+    "name": "Ground turkey 93%",
+    "search_term": "93% lean ground turkey",
+    "preferred_size": "1 lb",
+    "grams_per_serving": 150,
+    "protein_per_100g": 19.0
+  },
+  {
+    "id": "eggs",
+    "name": "Eggs",
+    "search_term": "large eggs 18 count",
+    "preferred_size": "18 ct",
+    "grams_per_serving": 100,
+    "protein_per_100g": 12.6
+  },
+  {
+    "id": "egg_whites",
+    "name": "Liquid egg whites",
+    "search_term": "liquid egg whites",
+    "preferred_size": "32 oz",
+    "grams_per_serving": 200,
+    "protein_per_100g": 11.0
+  },
+  {
+    "id": "greek_yogurt",
+    "name": "Greek yogurt",
+    "search_term": "plain nonfat greek yogurt 32 oz",
+    "preferred_size": "32 oz",
+    "grams_per_serving": 170,
+    "protein_per_100g": 10.0
+  },
+  {
+    "id": "cottage_cheese",
+    "name": "Cottage cheese",
+    "search_term": "low fat cottage cheese",
+    "preferred_size": "24 oz",
+    "grams_per_serving": 225,
+    "protein_per_100g": 11.0
+  },
+  {
+    "id": "milk",
+    "name": "Milk",
+    "search_term": "2% milk gallon",
+    "preferred_size": "1 gal",
+    "grams_per_serving": 240,
+    "protein_per_100g": 3.4
+  },
+  {
+    "id": "whey",
+    "name": "Whey protein",
+    "search_term": "whey protein powder vanilla",
+    "preferred_size": "2 lb",
+    "grams_per_serving": 30,
+    "protein_per_100g": 75.0
+  },
+  {
+    "id": "tofu",
+    "name": "Extra firm tofu",
+    "search_term": "extra firm tofu",
+    "preferred_size": "14 oz",
+    "grams_per_serving": 200,
+    "protein_per_100g": 15.0
+  },
+  {
+    "id": "tuna",
+    "name": "Canned tuna",
+    "search_term": "chunk light tuna in water 4 pack",
+    "preferred_size": "4 x 5 oz",
+    "grams_per_serving": 113,
+    "protein_per_100g": 25.0
+  },
+  {
+    "id": "black_beans",
+    "name": "Black beans",
+    "search_term": "canned black beans",
+    "preferred_size": "2 x 15 oz",
+    "grams_per_serving": 80,
+    "protein_per_100g": 8.9
+  },
+  {
+    "id": "chickpeas",
+    "name": "Chickpeas",
+    "search_term": "canned chickpeas garbanzo",
+    "preferred_size": "15 oz",
+    "grams_per_serving": 120,
+    "protein_per_100g": 9.0
+  },
+  {
+    "id": "lentils",
+    "name": "Dry lentils",
+    "search_term": "dry green lentils",
+    "preferred_size": "1 lb",
+    "grams_per_serving": 80,
+    "protein_per_100g": 25.0
+  },
+  {
+    "id": "rice",
+    "name": "Jasmine rice",
+    "search_term": "jasmine rice 2 lb",
+    "preferred_size": "2 lb",
+    "grams_per_serving": 75,
+    "protein_per_100g": 7.0
+  },
+  {
+    "id": "pasta",
+    "name": "Pasta",
+    "search_term": "penne pasta",
+    "preferred_size": "1 lb",
+    "grams_per_serving": 100,
+    "protein_per_100g": 13.0
+  },
+  {
+    "id": "oats",
+    "name": "Rolled oats",
+    "search_term": "old fashioned rolled oats",
+    "preferred_size": "42 oz",
+    "grams_per_serving": 40,
+    "protein_per_100g": 13.0
+  },
+  {
+    "id": "tortillas",
+    "name": "Flour tortillas",
+    "search_term": "flour tortillas burrito size",
+    "preferred_size": "10 ct",
+    "grams_per_serving": 90,
+    "protein_per_100g": 8.0
+  },
+  {
+    "id": "bread",
+    "name": "Whole wheat bread",
+    "search_term": "whole wheat bread",
+    "preferred_size": "20 oz",
+    "grams_per_serving": 64,
+    "protein_per_100g": 12.0
+  },
+  {
+    "id": "cheese",
+    "name": "Shredded cheese",
+    "search_term": "shredded mexican cheese 8 oz",
+    "preferred_size": "8 oz",
+    "grams_per_serving": 30,
+    "protein_per_100g": 25.0
+  },
+  {
+    "id": "stirfry_veg",
+    "name": "Frozen stir-fry veggies",
+    "search_term": "frozen stir fry vegetables",
+    "preferred_size": "2 lb",
+    "grams_per_serving": 150,
+    "protein_per_100g": 2.0
+  },
+  {
+    "id": "broccoli",
+    "name": "Frozen broccoli",
+    "search_term": "frozen broccoli florets",
+    "preferred_size": "12 oz",
+    "grams_per_serving": 120,
+    "protein_per_100g": 3.0
+  },
+  {
+    "id": "spinach",
+    "name": "Baby spinach",
+    "search_term": "baby spinach",
+    "preferred_size": "5 oz",
+    "grams_per_serving": 40,
+    "protein_per_100g": 2.9
+  },
+  {
+    "id": "potatoes",
+    "name": "Russet potatoes",
+    "search_term": "russet potatoes 5 lb",
+    "preferred_size": "5 lb",
+    "grams_per_serving": 250,
+    "protein_per_100g": 2.0
+  },
+  {
+    "id": "bananas",
+    "name": "Bananas",
+    "search_term": "bananas",
+    "preferred_size": "about 6",
+    "grams_per_serving": 120,
+    "protein_per_100g": 1.1
+  },
+  {
+    "id": "berries",
+    "name": "Frozen berries",
+    "search_term": "frozen mixed berries",
+    "preferred_size": "16 oz",
+    "grams_per_serving": 100,
+    "protein_per_100g": 0.7
+  },
+  {
+    "id": "peanut_butter",
+    "name": "Peanut butter",
+    "search_term": "creamy peanut butter 16 oz",
+    "preferred_size": "16 oz",
+    "grams_per_serving": 32,
+    "protein_per_100g": 25.0
+  },
+  {
+    "id": "salsa",
+    "name": "Salsa",
+    "search_term": "medium salsa",
+    "preferred_size": "16 oz",
+    "grams_per_serving": 40,
+    "protein_per_100g": 1.5
+  },
+  {
+    "id": "marinara",
+    "name": "Marinara sauce",
+    "search_term": "marinara pasta sauce",
+    "preferred_size": "24 oz",
+    "grams_per_serving": 120,
+    "protein_per_100g": 1.5
+  },
+  {
+    "id": "soy_sauce",
+    "name": "Soy sauce",
+    "search_term": "soy sauce",
+    "preferred_size": "15 oz",
+    "grams_per_serving": 15,
+    "protein_per_100g": 8.0
+  }
+]

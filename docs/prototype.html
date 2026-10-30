@@ -1,0 +1,349 @@
+<title>ProteinCart</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;700&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* Layout: one phone-width column, bottom tab bar; money shown as receipt lines in mono */
+:root{
+  --bg:#EEF1F5; --surface:#FFFFFF; --ink:#16213A; --muted:#5B6478; --line:#D7DCE5;
+  --maize:#E9A800; --maize-soft:#FFF3CC; --teal:#0B7F72; --teal-soft:#DDF2EF; --warn:#B4441C;
+  --display:"Familjen Grotesk","Helvetica Neue",Arial,sans-serif;
+  --body:"Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0E1424; --surface:#172036; --ink:#EDF0F6; --muted:#A3ABBD; --line:#2A3550;
+  --maize:#F5BC1F; --maize-soft:#3A3114; --teal:#3CC2B1; --teal-soft:#12322F; --warn:#F08A63; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0E1424; --surface:#172036; --ink:#EDF0F6; --muted:#A3ABBD; --line:#2A3550;
+  --maize:#F5BC1F; --maize-soft:#3A3114; --teal:#3CC2B1; --teal-soft:#12322F; --warn:#F08A63; color-scheme:dark}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.app{max-width:420px;margin:0 auto;min-height:100%;display:flex;flex-direction:column;padding-block:20px 96px}
+h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance;letter-spacing:-.01em}
+h1{font-size:30px;line-height:1.1}
+h2{font-size:21px}
+h3{font-size:16px}
+p{margin:0}
+.muted{color:var(--muted)}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.stack{display:flex;flex-direction:column;gap:16px}
+.row{display:flex;align-items:center;gap:10px}
+.between{justify-content:space-between}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px}
+label.field{display:flex;flex-direction:column;gap:6px;font-weight:700;font-size:14px}
+input,select{font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 12px;width:100%}
+input:focus-visible,select:focus-visible,button:focus-visible{outline:3px solid var(--maize);outline-offset:2px}
+.seg{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.seg button{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:10px;padding:10px 4px;font:inherit;font-weight:700;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.btn{font:inherit;font-weight:700;border:0;border-radius:12px;padding:14px 16px;cursor:pointer;width:100%}
+.btn.primary{background:var(--maize);color:#16213A}
+.btn.ghost{background:transparent;border:1px solid var(--line);color:var(--ink)}
+.btn.small{width:auto;padding:8px 12px;font-size:13px;border-radius:9px}
+.chip{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:700;padding:3px 8px;border-radius:999px;background:var(--teal-soft);color:var(--teal)}
+.chip.maize{background:var(--maize-soft);color:var(--ink)}
+/* receipt */
+.receipt{background:var(--surface);border:1px solid var(--line);border-radius:14px 14px 4px 4px;padding:16px;position:relative}
+.receipt::after{content:"";position:absolute;left:0;right:0;bottom:-8px;height:8px;
+  background:linear-gradient(-45deg,transparent 6px,var(--surface) 0) 0 0/12px 8px repeat-x,linear-gradient(45deg,transparent 6px,var(--surface) 0) 0 0/12px 8px repeat-x}
+.rline{display:flex;justify-content:space-between;gap:12px;font-family:var(--mono);font-size:14px;font-variant-numeric:tabular-nums;padding:3px 0}
+.rline.total{border-top:1px dashed var(--line);margin-top:6px;padding-top:9px;font-weight:700;font-size:16px}
+.save{color:var(--teal)}
+.big{font-family:var(--mono);font-size:40px;font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+/* progress */
+.bar{height:14px;background:var(--line);border-radius:999px;overflow:hidden}
+.bar>span{display:block;height:100%;background:var(--maize);border-radius:999px;transition:width .5s ease}
+.bar.teal>span{background:var(--teal)}
+/* plan */
+.day{display:flex;flex-direction:column;gap:8px}
+.meal{display:grid;grid-template-columns:62px 1fr auto;gap:10px;align-items:center;padding:10px 0;border-top:1px solid var(--line)}
+.meal:first-of-type{border-top:0}
+.slot{font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.meal .name{font-weight:700;min-width:0}
+.meal .meta{font-size:13px;color:var(--muted)}
+.iconbtn{border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:9px;padding:6px 9px;font:inherit;font-size:13px;cursor:pointer}
+.days{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px}
+.days button{flex:0 0 auto;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:10px;padding:8px 11px;font:inherit;font-weight:700;cursor:pointer}
+.days button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+/* cart */
+.item{display:grid;grid-template-columns:1fr auto auto;gap:10px;align-items:center;padding:9px 0;border-top:1px solid var(--line)}
+.item:first-child{border-top:0}
+.qty{font-family:var(--mono);font-size:13px;color:var(--muted)}
+/* tabs */
+.tabs{position:fixed;left:0;right:0;bottom:0;background:var(--surface);border-top:1px solid var(--line);
+  padding:8px max(16px,env(safe-area-inset-right,0px)) calc(8px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));z-index:5}
+.tabs nav{max-width:420px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:4px}
+.tabs button{border:0;background:transparent;color:var(--muted);font:inherit;font-size:12px;font-weight:700;padding:6px 0;border-radius:10px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:2px}
+.tabs button svg{width:22px;height:22px}
+.tabs button[aria-current="page"]{color:var(--ink);background:var(--maize-soft)}
+/* sheet */
+.scrim{position:fixed;inset:0;background:rgba(10,14,25,.45);z-index:9;display:flex;align-items:flex-end;justify-content:center}
+.sheet{background:var(--bg);width:100%;max-width:452px;border-radius:18px 18px 0 0;padding:20px max(16px,env(safe-area-inset-right,0px)) calc(20px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));max-height:88%;overflow:auto}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(84px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:999px;font-weight:700;font-size:14px;z-index:20;max-width:90%;text-align:center}
+.note{font-size:12px;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){.bar>span{transition:none}}
+</style>
+
+<div class="app" id="app"></div>
+<div class="tabs" id="tabs" hidden>
+  <nav aria-label="Main">
+    <button data-tab="home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Money</button>
+    <button data-tab="plan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Plan</button>
+    <button data-tab="cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 4h2l2.4 11h11l2-8H6.2"/><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/></svg>Cart</button>
+    <button data-tab="goals"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21V4h11l-1.5 4L15 12H4"/></svg>Goals</button>
+  </nav>
+</div>
+<div id="layer"></div>
+
+<script>
+const BOWL = 13.50; // estimated takeout bowl price incl. tax
+const STORES = { Kroger:1.00, Costco:0.84, Meijer:0.95 };
+const ING = {
+  chicken:{n:"Chicken breast, 3 lb",p:10.47,s:9}, rice:{n:"Jasmine rice, 2 lb",p:3.29,s:20},
+  beans:{n:"Black beans, 2 cans",p:2.00,s:6}, eggs:{n:"Eggs, 18 ct",p:4.29,s:6},
+  greek:{n:"Greek yogurt, 32 oz",p:4.99,s:5}, oats:{n:"Rolled oats, 42 oz",p:4.49,s:25},
+  beef:{n:"Ground beef 93%, 2 lb",p:11.98,s:8}, pasta:{n:"Pasta, 1 lb",p:1.29,s:4},
+  salsa:{n:"Salsa, 16 oz",p:2.99,s:8}, tortilla:{n:"Flour tortillas, 10 ct",p:2.79,s:5},
+  veg:{n:"Frozen stir-fry veggies, 2 lb",p:3.49,s:8}, tofu:{n:"Firm tofu, 14 oz",p:2.29,s:3},
+  cheese:{n:"Shredded cheese, 8 oz",p:2.79,s:8}, tuna:{n:"Tuna, 4 cans",p:4.96,s:4},
+  bread:{n:"Whole wheat bread",p:2.49,s:10}, banana:{n:"Bananas, bunch",p:1.80,s:6},
+  pb:{n:"Peanut butter, 16 oz",p:2.49,s:12}
+};
+const MEALS = [
+  {id:"bowl",n:"Chicken burrito bowl",pr:48,m:25,i:["chicken","rice","beans","salsa","cheese"],k:"main"},
+  {id:"stir",n:"Beef & veggie stir-fry",pr:42,m:20,i:["beef","veg","rice"],k:"main"},
+  {id:"pasta",n:"Beef ragu pasta",pr:40,m:25,i:["beef","pasta","cheese"],k:"main"},
+  {id:"tofu",n:"Tofu egg fried rice",pr:30,m:20,i:["tofu","eggs","rice","veg"],k:"main"},
+  {id:"quesa",n:"Chicken quesadilla",pr:44,m:15,i:["chicken","tortilla","cheese","salsa"],k:"main",q:1},
+  {id:"tuna",n:"Tuna melt",pr:38,m:10,i:["tuna","bread","cheese"],k:"main",q:1},
+  {id:"burrito",n:"Egg & bean burrito",pr:32,m:10,i:["eggs","beans","tortilla","salsa"],k:"bfast",q:1},
+  {id:"yog",n:"Greek yogurt oat bowl",pr:30,m:5,i:["greek","oats","banana"],k:"bfast",q:1},
+  {id:"pbo",n:"PB banana overnight oats",pr:22,m:5,i:["oats","pb","banana","greek"],k:"bfast",q:1}
+];
+const GOALS = [
+  {id:"fb",n:"Football game ticket",c:60},{id:"bb",n:"Basketball game with friends",c:35},
+  {id:"trip",n:"Weekend trip to Chicago",c:180},{id:"other",n:"Concert ticket",c:85}
+];
+const DAYS=["Mon","Tue","Wed","Thu","Fri","Sat","Sun"];
+const SLOTS=[["bfast","Breakfast"],["main","Lunch"],["main","Dinner"]];
+const byId = {}; MEALS.forEach(m=>byId[m.id]=m);
+
+let S = load() || {
+  setup:false, weight:170, goal:"gain", budget:90, store:"Costco", fun:"fb",
+  banked:0, skipped:0, week:1, plan:null, day:0, tab:"home"
+};
+if(!S.plan) S.plan = buildPlan();
+
+function load(){ try{ const v=localStorage.getItem("bb-state"); return v?JSON.parse(v):null }catch(e){ return null } }
+function save(){ try{ localStorage.setItem("bb-state",JSON.stringify(S)) }catch(e){} }
+function $(s,r){ return (r||document).querySelector(s) }
+function money(x){ return "$"+x.toFixed(2) }
+
+function buildPlan(){
+  const mains=MEALS.filter(m=>m.k==="main"), bf=MEALS.filter(m=>m.k==="bfast");
+  return DAYS.map((d,di)=>[bf[di%bf.length].id, mains[(di*2)%mains.length].id, mains[(di*2+3)%mains.length].id]);
+}
+function target(){ const f={gain:.7,maintain:.55,lean:.75}[S.goal]; return Math.round(S.weight*f/10)*10 }
+function cart(){
+  const need={};
+  S.plan.forEach(day=>day.forEach(id=>byId[id].i.forEach(k=>need[k]=(need[k]||0)+1)));
+  const mult=STORES[S.store];
+  return Object.keys(need).map(k=>{
+    const packs=Math.ceil(need[k]/ING[k].s);
+    return {k, n:ING[k].n, uses:need[k], packs, cost:packs*ING[k].p*mult};
+  }).sort((a,b)=>b.cost-a.cost);
+}
+function totals(){
+  const items=cart(), grocery=items.reduce((a,b)=>a+b.cost,0);
+  const takeout=14*BOWL, saved=takeout-grocery, fun=Math.max(0,S.budget-grocery);
+  const perMeal=grocery/21;
+  return {items,grocery,takeout,saved,fun,perMeal};
+}
+function dayProtein(d){ return S.plan[d].reduce((a,id)=>a+byId[id].pr,0) }
+function goalObj(){ return GOALS.find(g=>g.id===S.fun) }
+
+function toast(msg){
+  const t=document.createElement("div"); t.className="toast"; t.setAttribute("role","status"); t.textContent=msg;
+  document.body.appendChild(t); setTimeout(()=>t.remove(),2200);
+}
+
+/* ---------- screens ---------- */
+function render(){
+  save();
+  const tabs=$("#tabs"); tabs.hidden=!S.setup;
+  tabs.querySelectorAll("button").forEach(b=>b.setAttribute("aria-current",b.dataset.tab===S.tab?"page":"false"));
+  const app=$("#app");
+  if(!S.setup){ app.innerHTML=onboarding(); wireOnboarding(); return }
+  app.innerHTML={home,plan,cart:cartView,goals}[S.tab]();
+  wire();
+  window.scrollTo(0,0);
+}
+
+function onboarding(){
+  const seg=(name,opts,val)=>`<div class="seg" role="group" aria-label="${name}">${opts.map(o=>`<button type="button" data-seg="${name}" data-v="${o[0]}" aria-pressed="${o[0]===val}">${o[1]}</button>`).join("")}</div>`;
+  return `<div class="stack" style="gap:22px">
+    <div class="stack" style="gap:8px">
+      <span class="eyebrow">ProteinCart</span>
+      <h1>Eat for your gym goal. Spend less than a burrito bowl a day.</h1>
+      <p class="muted">Answer five quick questions. We build a week of meals, a ready grocery cart, and show what you save versus takeout.</p>
+    </div>
+    <form id="ob" class="stack card">
+      <label class="field" for="w">Your weight (lb)
+        <input id="w" type="number" inputmode="numeric" min="90" max="350" value="${S.weight}">
+      </label>
+      <div class="field"><span style="font-weight:700;font-size:14px">Goal</span>
+        ${seg("goal",[["gain","Build muscle"],["lean","Lean out"],["maintain","Stay healthy"]],S.goal)}</div>
+      <label class="field" for="b">Weekly food budget
+        <input id="b" type="number" inputmode="numeric" min="20" max="400" value="${S.budget}">
+      </label>
+      <div class="field"><span style="font-weight:700;font-size:14px">Where you shop</span>
+        ${seg("store",Object.keys(STORES).map(s=>[s,s]),S.store)}</div>
+      <label class="field" for="f">Save up for
+        <select id="f">${GOALS.map(g=>`<option value="${g.id}" ${g.id===S.fun?"selected":""}>${g.n} ($${g.c})</option>`).join("")}</select>
+      </label>
+      <p class="note">No calorie logging. We give you rough protein targets and do the math.</p>
+      <button class="btn primary" type="submit">Build my week</button>
+    </form>
+  </div>`;
+}
+function wireOnboarding(){
+  document.querySelectorAll("[data-seg]").forEach(b=>b.onclick=()=>{ S[b.dataset.seg]=b.dataset.v;
+    document.querySelectorAll(`[data-seg="${b.dataset.seg}"]`).forEach(x=>x.setAttribute("aria-pressed",x===b)); });
+  $("#ob").onsubmit=e=>{ e.preventDefault();
+    S.weight=Math.min(350,Math.max(90,+$("#w").value||170)); S.budget=Math.max(20,+$("#b").value||90);
+    S.fun=$("#f").value; S.setup=true; S.tab="home"; S.plan=buildPlan(); render(); toast("Your week is ready"); };
+}
+
+function home(){
+  const t=totals(), g=goalObj(), pct=Math.min(100,S.banked/g.c*100);
+  const weeksLeft=t.saved>0?Math.max(0,Math.ceil((g.c-S.banked)/t.saved)):"–";
+  const over=t.grocery>S.budget;
+  return `<div class="stack">
+    <div class="row between"><div><span class="eyebrow">Week ${S.week} · ${S.store}</span><h2>This week's money</h2></div>
+      <button class="btn small primary" data-act="quick">I didn't plan</button></div>
+    <div class="card stack" style="gap:6px">
+      <span class="muted">You save vs. 14 takeout bowls</span>
+      <span class="big save">${money(t.saved)}</span>
+      <span class="note">That's ${money(t.perMeal)} a meal instead of ${money(BOWL)}.</span>
+    </div>
+    <div class="receipt">
+      <div class="rline"><span>14 burrito bowls</span><span>${money(t.takeout)}</span></div>
+      <div class="rline"><span>Your grocery cart</span><span>−${money(t.grocery)}</span></div>
+      <div class="rline total save"><span>Saved this week</span><span>${money(t.saved)}</span></div>
+    </div>
+    <div class="card stack" style="gap:10px;margin-top:6px">
+      <div class="row between"><h3>Fun money left</h3><span class="num" style="font-weight:700;${over?"color:var(--warn)":""}">${over?"Over by "+money(t.grocery-S.budget):money(t.fun)}</span></div>
+      <p class="muted" style="font-size:14px">Budget ${money(S.budget)} minus groceries ${money(t.grocery)}.</p>
+    </div>
+    <div class="card stack" style="gap:10px">
+      <div class="row between"><h3>${g.n}</h3><span class="chip maize num">${money(S.banked)} / $${g.c}</span></div>
+      <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="${g.c}" aria-valuenow="${S.banked.toFixed(0)}"><span style="width:${pct}%"></span></div>
+      <p class="muted" style="font-size:14px">${pct>=100?"Goal reached. Go get that ticket.":`About ${weeksLeft} more week${weeksLeft===1?"":"s"} at this pace.`}</p>
+      <button class="btn ghost" data-act="bank">Finish week ${S.week} and bank ${money(Math.max(0,t.saved))}</button>
+    </div>
+    <div class="card row between">
+      <div><h3>Protein today</h3><p class="muted" style="font-size:14px">Target about ${target()} g</p></div>
+      <span class="chip num">${dayProtein(S.day)} g planned</span>
+    </div>
+    ${S.skipped?`<p class="note">You cooked instead of ordering ${S.skipped} time${S.skipped>1?"s":""} with the "I didn't plan" button.</p>`:""}
+    <p class="note">Prices are sample estimates for Ann Arbor stores, Oct 2026. Bowl price assumed ${money(BOWL)} with tax.</p>
+  </div>`;
+}
+
+function plan(){
+  const d=S.day, tgt=target(), pr=dayProtein(d);
+  return `<div class="stack">
+    <div><span class="eyebrow">Weekly plan</span><h2>21 meals, about ${tgt} g protein a day</h2></div>
+    <div class="days" role="group" aria-label="Day">${DAYS.map((x,i)=>`<button data-day="${i}" aria-pressed="${i===d}">${x}</button>`).join("")}</div>
+    <div class="card day">
+      <div class="row between"><h3>${DAYS[d]}</h3><span class="chip num">${pr} g / ${tgt} g</span></div>
+      <div class="bar teal" aria-hidden="true"><span style="width:${Math.min(100,pr/tgt*100)}%"></span></div>
+      <div>${S.plan[d].map((id,si)=>{ const m=byId[id]; return `<div class="meal">
+        <span class="slot">${SLOTS[si][1]}</span>
+        <div style="min-width:0"><div class="name">${m.n}</div><div class="meta">${m.pr} g protein · ${m.m} min${m.q?" · quick":""}</div></div>
+        <button class="iconbtn" data-swap="${si}" aria-label="Swap ${SLOTS[si][1].toLowerCase()}">Swap</button></div>` }).join("")}</div>
+    </div>
+    ${pr<tgt?`<p class="note">A bit under target? Add a yogurt or a glass of milk. No need to count exactly.</p>`:`<p class="note">You hit your rough protein target today.</p>`}
+    <button class="btn ghost" data-act="shuffle">Shuffle the whole week</button>
+  </div>`;
+}
+
+function cartView(){
+  const t=totals();
+  return `<div class="stack">
+    <div class="row between"><div><span class="eyebrow">Grocery cart</span><h2>${t.items.length} items at ${S.store}</h2></div><span class="chip maize num">${money(t.grocery)}</span></div>
+    <div class="seg" role="group" aria-label="Store">${Object.keys(STORES).map(s=>`<button data-store="${s}" aria-pressed="${s===S.store}">${s}</button>`).join("")}</div>
+    <div class="card"><div>${t.items.map(it=>`<div class="item">
+      <div style="min-width:0"><div style="font-weight:700">${it.n}</div><div class="qty">used in ${it.uses} meal${it.uses>1?"s":""}</div></div>
+      <span class="qty">×${it.packs}</span><span class="num">${money(it.cost)}</span></div>`).join("")}</div></div>
+    <div class="receipt">
+      <div class="rline"><span>Cart total</span><span>${money(t.grocery)}</span></div>
+      <div class="rline"><span>Per meal</span><span>${money(t.perMeal)}</span></div>
+      <div class="rline total"><span>Left in budget</span><span>${money(S.budget-t.grocery)}</span></div>
+    </div>
+    <button class="btn primary" data-act="send" style="margin-top:6px">Send cart to ${S.store}</button>
+    <p class="note">Prototype: the button shows how checkout would hand off to the store's app. No order is placed.</p>
+  </div>`;
+}
+
+function goals(){
+  const t=totals();
+  return `<div class="stack">
+    <div><span class="eyebrow">Goals</span><h2>What your savings are for</h2></div>
+    ${GOALS.map(g=>{ const pct=Math.min(100,S.banked/g.c*100), on=g.id===S.fun;
+      return `<div class="card stack" style="gap:8px;${on?"border-color:var(--maize);border-width:2px":""}">
+        <div class="row between"><h3>${g.n}</h3><span class="num">$${g.c}</span></div>
+        <div class="bar"><span style="width:${pct}%"></span></div>
+        <div class="row between"><span class="note">${t.saved>0?Math.max(0,Math.ceil((g.c-S.banked)/t.saved))+" week(s) at this pace":""}</span>
+        ${on?`<span class="chip maize">Saving for this</span>`:`<button class="btn small ghost" data-goal="${g.id}">Save for this</button>`}</div></div>`}).join("")}
+    <div class="card stack" style="gap:10px">
+      <h3>Your setup</h3>
+      <p class="muted" style="font-size:14px">${S.weight} lb · ${{gain:"Build muscle",lean:"Lean out",maintain:"Stay healthy"}[S.goal]} · ${money(S.budget)} a week · ${S.store}</p>
+      <button class="btn ghost" data-act="restart">Change my answers</button>
+    </div>
+  </div>`;
+}
+
+function quickSheet(){
+  const mult=STORES[S.store];
+  const quick=MEALS.filter(m=>m.q).map(m=>{ const c=m.i.reduce((a,k)=>a+ING[k].p*mult/ING[k].s,0); return {m,c} });
+  $("#layer").innerHTML=`<div class="scrim" data-close><div class="sheet stack" role="dialog" aria-modal="true" aria-labelledby="qt">
+    <div class="row between"><h2 id="qt">Hungry and no plan?</h2><button class="iconbtn" data-close aria-label="Close">Close</button></div>
+    <p class="muted">These use what's already in your cart and take 15 minutes or less.</p>
+    ${quick.map(q=>`<div class="card stack" style="gap:8px">
+      <div class="row between"><h3>${q.m.n}</h3><span class="chip num">${q.m.pr} g</span></div>
+      <div class="rline"><span>${q.m.m} min · costs</span><span>${money(q.c)}</span></div>
+      <div class="rline save"><span>vs. a bowl you save</span><span>${money(BOWL-q.c)}</span></div>
+      <button class="btn primary" data-cook="${q.c.toFixed(2)}">Cook this instead</button></div>`).join("")}
+  </div></div>`;
+  $("#layer").querySelectorAll("[data-close]").forEach(el=>el.addEventListener("click",e=>{ if(e.target===el) $("#layer").innerHTML="" }));
+  $("#layer").querySelectorAll("[data-cook]").forEach(b=>b.onclick=()=>{
+    const s=BOWL-(+b.dataset.cook); S.banked+=s; S.skipped++; $("#layer").innerHTML=""; render(); toast("+"+money(s)+" toward "+goalObj().n);
+  });
+}
+
+function wire(){
+  const app=$("#app");
+  app.querySelectorAll("[data-day]").forEach(b=>b.onclick=()=>{ S.day=+b.dataset.day; render() });
+  app.querySelectorAll("[data-swap]").forEach(b=>b.onclick=()=>{
+    const si=+b.dataset.swap, kind=SLOTS[si][0], pool=MEALS.filter(m=>m.k===kind);
+    const cur=pool.findIndex(m=>m.id===S.plan[S.day][si]); S.plan[S.day][si]=pool[(cur+1)%pool.length].id; render();
+  });
+  app.querySelectorAll("[data-store]").forEach(b=>b.onclick=()=>{ S.store=b.dataset.store; render() });
+  app.querySelectorAll("[data-goal]").forEach(b=>b.onclick=()=>{ S.fun=b.dataset.goal; render(); toast("Now saving for "+goalObj().n) });
+  app.querySelectorAll("[data-act]").forEach(b=>b.onclick=()=>{
+    const a=b.dataset.act, t=totals();
+    if(a==="quick") quickSheet();
+    if(a==="bank"){ S.banked+=Math.max(0,t.saved); S.week++; render(); toast("Banked "+money(Math.max(0,t.saved))) }
+    if(a==="shuffle"){ const mains=MEALS.filter(m=>m.k==="main"), bf=MEALS.filter(m=>m.k==="bfast");
+      S.plan=DAYS.map(()=>[bf[Math.floor(Math.random()*bf.length)].id,mains[Math.floor(Math.random()*mains.length)].id,mains[Math.floor(Math.random()*mains.length)].id]); render(); toast("New week shuffled") }
+    if(a==="send") toast("Cart ready to open in the "+S.store+" app");
+    if(a==="restart"){ S.setup=false; render() }
+  });
+}
+$("#tabs").querySelectorAll("button").forEach(b=>b.onclick=()=>{ S.tab=b.dataset.tab; render() });
+render();
+</script>

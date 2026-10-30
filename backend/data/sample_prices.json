@@ -1,0 +1,195 @@
+{
+  "store": "Kroger",
+  "location": "Ann Arbor, MI",
+  "fetched_at": "2026-10-28",
+  "is_sample": true,
+  "note": "Hand-checked shelf estimates for Ann Arbor Kroger, used when the live API is unavailable.",
+  "products": {
+    "chicken_breast": {
+      "name": "Kroger Boneless Skinless Chicken Breasts, 3 lb",
+      "size": "3 lb",
+      "package_grams": 1361,
+      "price_cents": 1047
+    },
+    "chicken_thigh": {
+      "name": "Kroger Boneless Skinless Chicken Thighs, 3 lb",
+      "size": "3 lb",
+      "package_grams": 1361,
+      "price_cents": 899
+    },
+    "ground_beef": {
+      "name": "Kroger 93/7 Lean Ground Beef, 2 lb",
+      "size": "2 lb",
+      "package_grams": 907,
+      "price_cents": 1198
+    },
+    "ground_turkey": {
+      "name": "Kroger 93/7 Ground Turkey, 1 lb",
+      "size": "1 lb",
+      "package_grams": 454,
+      "price_cents": 549
+    },
+    "eggs": {
+      "name": "Kroger Grade A Large Eggs, 18 ct",
+      "size": "18 ct",
+      "package_grams": 900,
+      "price_cents": 429
+    },
+    "egg_whites": {
+      "name": "Kroger 100% Liquid Egg Whites, 32 oz",
+      "size": "32 oz",
+      "package_grams": 907,
+      "price_cents": 449
+    },
+    "greek_yogurt": {
+      "name": "Kroger Plain Nonfat Greek Yogurt, 32 oz",
+      "size": "32 oz",
+      "package_grams": 907,
+      "price_cents": 499
+    },
+    "cottage_cheese": {
+      "name": "Kroger 2% Cottage Cheese, 24 oz",
+      "size": "24 oz",
+      "package_grams": 680,
+      "price_cents": 399
+    },
+    "milk": {
+      "name": "Kroger 2% Reduced Fat Milk, 1 gal",
+      "size": "1 gal",
+      "package_grams": 3785,
+      "price_cents": 359
+    },
+    "whey": {
+      "name": "Simple Truth Whey Protein, Vanilla, 2 lb",
+      "size": "2 lb",
+      "package_grams": 907,
+      "price_cents": 2499
+    },
+    "tofu": {
+      "name": "Simple Truth Organic Extra Firm Tofu, 14 oz",
+      "size": "14 oz",
+      "package_grams": 397,
+      "price_cents": 229
+    },
+    "tuna": {
+      "name": "Kroger Chunk Light Tuna in Water, 4 x 5 oz",
+      "size": "4 x 5 oz",
+      "package_grams": 452,
+      "price_cents": 496
+    },
+    "black_beans": {
+      "name": "Kroger Black Beans, 2 x 15 oz",
+      "size": "2 x 15 oz",
+      "package_grams": 480,
+      "price_cents": 200
+    },
+    "chickpeas": {
+      "name": "Kroger Garbanzo Beans, 15 oz",
+      "size": "15 oz",
+      "package_grams": 240,
+      "price_cents": 109
+    },
+    "lentils": {
+      "name": "Kroger Lentils, 1 lb",
+      "size": "1 lb",
+      "package_grams": 454,
+      "price_cents": 179
+    },
+    "rice": {
+      "name": "Kroger Jasmine Rice, 2 lb",
+      "size": "2 lb",
+      "package_grams": 907,
+      "price_cents": 329
+    },
+    "pasta": {
+      "name": "Kroger Penne Rigate, 1 lb",
+      "size": "1 lb",
+      "package_grams": 454,
+      "price_cents": 129
+    },
+    "oats": {
+      "name": "Kroger Old Fashioned Oats, 42 oz",
+      "size": "42 oz",
+      "package_grams": 1191,
+      "price_cents": 449
+    },
+    "tortillas": {
+      "name": "Kroger Flour Tortillas, 10 ct",
+      "size": "10 ct",
+      "package_grams": 450,
+      "price_cents": 279
+    },
+    "bread": {
+      "name": "Kroger 100% Whole Wheat Bread, 20 oz",
+      "size": "20 oz",
+      "package_grams": 567,
+      "price_cents": 249
+    },
+    "cheese": {
+      "name": "Kroger Mexican Style Shredded Cheese, 8 oz",
+      "size": "8 oz",
+      "package_grams": 227,
+      "price_cents": 279
+    },
+    "stirfry_veg": {
+      "name": "Kroger Stir Fry Vegetables, 2 lb",
+      "size": "2 lb",
+      "package_grams": 907,
+      "price_cents": 349
+    },
+    "broccoli": {
+      "name": "Kroger Broccoli Florets, 12 oz",
+      "size": "12 oz",
+      "package_grams": 340,
+      "price_cents": 179
+    },
+    "spinach": {
+      "name": "Kroger Baby Spinach, 5 oz",
+      "size": "5 oz",
+      "package_grams": 142,
+      "price_cents": 249
+    },
+    "potatoes": {
+      "name": "Kroger Russet Potatoes, 5 lb",
+      "size": "5 lb",
+      "package_grams": 2268,
+      "price_cents": 399
+    },
+    "bananas": {
+      "name": "Bananas, about 2.5 lb",
+      "size": "about 6",
+      "package_grams": 720,
+      "price_cents": 180
+    },
+    "berries": {
+      "name": "Kroger Frozen Mixed Berries, 16 oz",
+      "size": "16 oz",
+      "package_grams": 454,
+      "price_cents": 349
+    },
+    "peanut_butter": {
+      "name": "Kroger Creamy Peanut Butter, 16 oz",
+      "size": "16 oz",
+      "package_grams": 454,
+      "price_cents": 249
+    },
+    "salsa": {
+      "name": "Kroger Medium Salsa, 16 oz",
+      "size": "16 oz",
+      "package_grams": 454,
+      "price_cents": 299
+    },
+    "marinara": {
+      "name": "Kroger Marinara Pasta Sauce, 24 oz",
+      "size": "24 oz",
+      "package_grams": 680,
+      "price_cents": 229
+    },
+    "soy_sauce": {
+      "name": "Kroger Soy Sauce, 15 oz",
+      "size": "15 oz",
+      "package_grams": 444,
+      "price_cents": 199
+    }
+  }
+}

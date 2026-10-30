@@ -1,0 +1,315 @@
+@import "tailwindcss";
+
+/* Design tokens. Light by default, dark from the OS, or forced with data-theme. */
+:root {
+  --bg: #eef1f5;
+  --surface: #ffffff;
+  --ink: #16213a;
+  --muted: #5b6478;
+  --line: #d7dce5;
+  --maize: #e9a800;
+  --maize-soft: #fff3cc;
+  --teal: #0b7f72;
+  --teal-soft: #ddf2ef;
+  --warn: #b4441c;
+  --warn-soft: #fbe6dd;
+  --on-maize: #16213a;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1424;
+    --surface: #172036;
+    --ink: #edf0f6;
+    --muted: #a3abbd;
+    --line: #2a3550;
+    --maize: #f5bc1f;
+    --maize-soft: #3a3114;
+    --teal: #3cc2b1;
+    --teal-soft: #12322f;
+    --warn: #f08a63;
+    --warn-soft: #3a2018;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1424;
+  --surface: #172036;
+  --ink: #edf0f6;
+  --muted: #a3abbd;
+  --line: #2a3550;
+  --maize: #f5bc1f;
+  --maize-soft: #3a3114;
+  --teal: #3cc2b1;
+  --teal-soft: #12322f;
+  --warn: #f08a63;
+  --warn-soft: #3a2018;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-page: var(--bg);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-maize: var(--maize);
+  --color-maize-soft: var(--maize-soft);
+  --color-teal: var(--teal);
+  --color-teal-soft: var(--teal-soft);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+  --font-display: "Familjen Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+
+@layer base {
+  html,
+  body {
+    min-height: 100%;
+  }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 15px;
+    line-height: 1.5;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    -webkit-tap-highlight-color: transparent;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+    letter-spacing: -0.01em;
+    font-weight: 700;
+  }
+  h1 {
+    font-size: 30px;
+    line-height: 1.1;
+  }
+  h2 {
+    font-size: 21px;
+    line-height: 1.2;
+  }
+  h3 {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+  :focus-visible {
+    outline: 3px solid var(--maize);
+    outline-offset: 2px;
+  }
+  button {
+    cursor: pointer;
+  }
+  button:disabled {
+    cursor: not-allowed;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .num {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+  .note {
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 16px;
+  }
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .input {
+    font: inherit;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--ink);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 11px 12px;
+    width: 100%;
+    min-height: 44px;
+  }
+  .seg {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+  }
+  .seg button {
+    border: 1px solid var(--line);
+    background: var(--surface);
+    color: var(--ink);
+    border-radius: 10px;
+    padding: 8px 4px;
+    min-height: 44px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  .seg button[aria-pressed="true"] {
+    background: var(--ink);
+    color: var(--bg);
+    border-color: var(--ink);
+  }
+  .seg button:disabled {
+    color: var(--muted);
+    border-style: dashed;
+  }
+  .btn {
+    font-weight: 700;
+    border: 0;
+    border-radius: 12px;
+    padding: 13px 16px;
+    min-height: 48px;
+    width: 100%;
+  }
+  .btn-primary {
+    background: var(--maize);
+    color: var(--on-maize);
+  }
+  .btn-ghost {
+    background: transparent;
+    border: 1px solid var(--line);
+    color: var(--ink);
+  }
+  .btn:disabled {
+    opacity: 0.6;
+  }
+  .btn-small {
+    width: auto;
+    padding: 8px 12px;
+    min-height: 44px;
+    font-size: 13px;
+    border-radius: 10px;
+  }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 999px;
+    background: var(--teal-soft);
+    color: var(--teal);
+    white-space: nowrap;
+  }
+  .chip-maize {
+    background: var(--maize-soft);
+    color: var(--ink);
+  }
+  .chip-warn {
+    background: var(--warn-soft);
+    color: var(--warn);
+  }
+  .iconbtn {
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--ink);
+    border-radius: 10px;
+    padding: 6px 12px;
+    min-height: 44px;
+    min-width: 44px;
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  /* Receipt: the signature money breakdown. */
+  .receipt {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-bottom: 0;
+    border-radius: 14px 14px 0 0;
+    padding: 16px 16px 12px;
+    position: relative;
+    margin-bottom: 8px;
+  }
+  .receipt::after {
+    content: "";
+    position: absolute;
+    left: -1px;
+    right: -1px;
+    bottom: -8px;
+    height: 8px;
+    background:
+      linear-gradient(-45deg, transparent 6px, var(--surface) 0) 0 0 / 12px 8px repeat-x,
+      linear-gradient(45deg, transparent 6px, var(--surface) 0) 0 0 / 12px 8px repeat-x;
+  }
+  .rline {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    font-family: var(--font-mono);
+    font-size: 14px;
+    font-variant-numeric: tabular-nums;
+    padding: 3px 0;
+  }
+  .rline-total {
+    border-top: 1px dashed var(--line);
+    margin-top: 6px;
+    padding-top: 9px;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .big {
+    font-family: var(--font-mono);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .bar {
+    height: 14px;
+    background: var(--line);
+    border-radius: 999px;
+    overflow: hidden;
+  }
+  .bar > span {
+    display: block;
+    height: 100%;
+    background: var(--maize);
+    border-radius: 999px;
+  }
+  .bar-teal > span {
+    background: var(--teal);
+  }
+  /* The one motion moment: the goal bar springs forward when savings are banked. */
+  .bar > span.spring {
+    transition: width 700ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  /* Static placeholder: no shimmer, so the goal bar stays the only motion. */
+  .skeleton {
+    background: var(--line);
+    border-radius: 8px;
+    opacity: 0.7;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bar > span.spring {
+    transition: none;
+  }
+}
