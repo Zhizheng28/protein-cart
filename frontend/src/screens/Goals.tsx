@@ -1,6 +1,7 @@
+import { useState } from "react";
 import { ProgressBar } from "../components/ProgressBar";
 import { money, moneyShort, plural, weeksToGoal } from "../format";
-import type { BankedWeek } from "../store";
+import type { BankedWeek, ClaimedGoal } from "../store";
 import type { Catalog, Profile } from "../types";
 
 interface GoalsProps {
@@ -9,12 +10,16 @@ interface GoalsProps {
   bankedCents: number;
   weeklySavedCents: number;
   history: BankedWeek[];
+  claimed: ClaimedGoal[];
   cookedInstead: number;
   cookedSavedCents: number;
   storeName: string;
   onChooseGoal: (id: string) => void;
+  onReset: () => void;
   onEditProfile: () => void;
 }
+
+const RECENT_WEEKS = 4;
 
 export function Goals({
   catalog,
@@ -22,12 +27,26 @@ export function Goals({
   bankedCents,
   weeklySavedCents,
   history,
+  claimed,
   cookedInstead,
   cookedSavedCents,
   storeName,
   onChooseGoal,
+  onReset,
   onEditProfile,
 }: GoalsProps) {
+  const [confirmingReset, setConfirmingReset] = useState(false);
+  const recent = history.slice(-RECENT_WEEKS);
+  const earlier = history.slice(0, -RECENT_WEEKS);
+  const earlierCents = earlier.reduce((sum, entry) => sum + entry.savedCents, 0);
+  const hasActivity = history.length > 0 || cookedInstead > 0 || claimed.length > 0;
+  // One line per goal, however many times it was claimed.
+  const spent = new Map<string, { count: number; cents: number }>();
+  for (const goal of claimed) {
+    const entry = spent.get(goal.name) ?? { count: 0, cents: 0 };
+    spent.set(goal.name, { count: entry.count + 1, cents: entry.cents + goal.costCents });
+  }
+
   return (
     <div className="flex flex-col gap-4">
       <div>
@@ -35,7 +54,7 @@ export function Goals({
         <h2>What your savings are for</h2>
       </div>
 
-      {bankedCents === 0 && (
+      {!hasActivity && (
         <p className="text-muted text-sm">
           Nothing banked yet. Finish your week on the Money tab and the savings land here.
         </p>
@@ -80,10 +99,18 @@ export function Goals({
         );
       })}
 
-      {bankedCents > 0 && (
-        <section className="card flex flex-col gap-1" aria-label="Banked so far">
-          <h3 className="mb-1">Banked so far</h3>
-          {history.map((entry) => (
+      {hasActivity && (
+        <section className="card flex flex-col gap-1" aria-label="Your savings">
+          <h3 className="mb-1">Your savings</h3>
+          {earlier.length > 0 && (
+            <div className="rline">
+              <span>
+                Weeks {earlier[0]?.week}–{earlier[earlier.length - 1]?.week}
+              </span>
+              <span className="text-teal">+{money(earlierCents)}</span>
+            </div>
+          )}
+          {recent.map((entry) => (
             <div key={entry.week} className="rline">
               <span>Week {entry.week}</span>
               <span className="text-teal">+{money(entry.savedCents)}</span>
@@ -95,8 +122,17 @@ export function Goals({
               <span className="text-teal">+{money(cookedSavedCents)}</span>
             </div>
           )}
+          {[...spent.entries()].map(([name, entry]) => (
+            <div key={name} className="rline">
+              <span className="min-w-0 truncate">
+                {name}
+                {entry.count > 1 && ` ×${entry.count}`}
+              </span>
+              <span>−{money(entry.cents)}</span>
+            </div>
+          ))}
           <div className="rline rline-total">
-            <span>Total</span>
+            <span>Available now</span>
             <span>{money(bankedCents)}</span>
           </div>
         </section>
@@ -111,6 +147,43 @@ export function Goals({
         <button type="button" className="btn btn-ghost" onClick={onEditProfile}>
           Change my answers
         </button>
+        {confirmingReset ? (
+          <div className="bg-warn-soft flex flex-col gap-2.5 rounded-xl p-3" role="alert">
+            <p className="text-sm">
+              This clears your savings and goal history and starts again at week 1. Your answers and
+              meal plan stay.
+            </p>
+            <div className="grid grid-cols-2 gap-2">
+              <button
+                type="button"
+                className="btn btn-ghost"
+                onClick={() => setConfirmingReset(false)}
+              >
+                Cancel
+              </button>
+              <button
+                type="button"
+                className="btn bg-warn text-white dark:text-[#16213a]"
+                onClick={() => {
+                  setConfirmingReset(false);
+                  onReset();
+                }}
+              >
+                Reset
+              </button>
+            </div>
+          </div>
+        ) : (
+          hasActivity && (
+            <button
+              type="button"
+              className="text-muted min-h-11 text-sm font-bold underline underline-offset-4"
+              onClick={() => setConfirmingReset(true)}
+            >
+              Reset progress
+            </button>
+          )
+        )}
       </section>
     </div>
   );

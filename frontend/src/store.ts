@@ -9,6 +9,13 @@ export interface BankedWeek {
   savedCents: number;
 }
 
+/** A goal the user saved up for and spent. */
+export interface ClaimedGoal {
+  name: string;
+  costCents: number;
+  week: number;
+}
+
 /** Everything we remember between visits. Prices are re-fetched, never stored. */
 export interface SavedState {
   profile: Profile | null;
@@ -19,6 +26,7 @@ export interface SavedState {
   cookedInstead: number;
   cookedSavedCents: number;
   history: BankedWeek[];
+  claimed: ClaimedGoal[];
   tab: Tab;
   planDay: number;
   useSample: boolean;
@@ -33,6 +41,7 @@ export const initialState: SavedState = {
   cookedInstead: 0,
   cookedSavedCents: 0,
   history: [],
+  claimed: [],
   tab: "money",
   planDay: todayIndex(),
   useSample: false,
@@ -51,6 +60,19 @@ function load(): SavedState {
   } catch {
     return initialState;
   }
+}
+
+/** Clears savings and goes back to week 1, keeping the user's answers and plan. */
+export function resetProgress(state: SavedState): SavedState {
+  return {
+    ...state,
+    bankedCents: 0,
+    week: 1,
+    cookedInstead: 0,
+    cookedSavedCents: 0,
+    history: [],
+    claimed: [],
+  };
 }
 
 /** App state that survives reloads. Storage failures are ignored, the app still works. */

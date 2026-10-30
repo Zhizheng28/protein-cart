@@ -14,6 +14,7 @@ interface MoneyProps {
   todayProteinG: number;
   onQuickMeal: () => void;
   onBank: () => void;
+  onClaim: () => void;
 }
 
 export function Money({
@@ -27,15 +28,21 @@ export function Money({
   todayProteinG,
   onQuickMeal,
   onBank,
+  onClaim,
 }: MoneyProps) {
   const m = evaluation.money;
   const bowl = catalog.bowl_price_cents;
   const bankable = Math.max(0, m.saved_cents);
   const reached = bankedCents >= funGoal.cost_cents;
   const weeksLeft = weeksToGoal(funGoal.cost_cents, bankedCents, m.saved_cents);
+  const leftover = Math.max(0, bankedCents - funGoal.cost_cents);
   let pace = `About ${plural(weeksLeft ?? 0, "more week")} at this pace.`;
-  if (reached) pace = "Goal reached. Go get that ticket.";
-  else if (weeksLeft === null) pace = "Bank a week of savings to start filling this.";
+  if (reached) {
+    pace =
+      leftover > 0
+        ? `You saved enough. The extra ${money(leftover)} carries over to your next goal.`
+        : "You saved exactly enough.";
+  } else if (weeksLeft === null) pace = "Bank a week of savings to start filling this.";
   const over = m.over_budget_cents > 0;
 
   return (
@@ -93,14 +100,19 @@ export function Money({
         total={{ label: "Saved this week", value: money(m.saved_cents), tone: "save" }}
       />
 
-      <section className="card flex flex-col gap-3" aria-label="Savings goal">
+      <section
+        className={`card flex flex-col gap-3 ${reached ? "border-maize! bg-maize-soft!" : ""}`}
+        aria-label="Savings goal"
+      >
         <div className="flex items-center justify-between gap-3">
           <div>
-            <span className="eyebrow">Saving for</span>
+            <span className={`eyebrow ${reached ? "text-ink!" : ""}`}>
+              {reached ? "Goal reached" : "Saving for"}
+            </span>
             <h3>{funGoal.name}</h3>
           </div>
-          <span className="chip chip-maize num">
-            {money(bankedCents)} / {moneyShort(funGoal.cost_cents)}
+          <span className="chip chip-maize num bg-surface!">
+            {money(Math.min(bankedCents, funGoal.cost_cents))} / {moneyShort(funGoal.cost_cents)}
           </span>
         </div>
         <ProgressBar
@@ -109,7 +121,12 @@ export function Money({
           label={`Saved toward ${funGoal.name}`}
           spring
         />
-        <p className="text-muted text-sm">{pace}</p>
+        <p className={`text-sm ${reached ? "text-ink" : "text-muted"}`}>{pace}</p>
+        {reached && (
+          <button type="button" className="btn btn-primary" onClick={onClaim}>
+            Claim your {funGoal.name.toLowerCase()}
+          </button>
+        )}
         <button type="button" className="btn btn-ghost" onClick={onBank}>
           Finish week {week} and bank <span className="num">{money(bankable)}</span>
         </button>

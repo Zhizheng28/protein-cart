@@ -12,10 +12,11 @@ import { Money } from "./screens/Money";
 import { Onboarding } from "./screens/Onboarding";
 import { Plan, dayProtein } from "./screens/Plan";
 import { QuickMealSheet } from "./screens/QuickMealSheet";
-import { todayIndex, useSavedState } from "./store";
+import { resetProgress, todayIndex, useSavedState } from "./store";
 import type {
   Catalog,
   Evaluation,
+  FunGoal,
   MealSummary,
   PlanResponse,
   Profile,
@@ -168,15 +169,34 @@ export function App() {
     reprice(profile, days, saved.useSample);
   }
 
+  /** Bank this week's savings and start next week with a fresh plan. */
   function bank(savedCents: number) {
+    if (!profile) return;
     const amount = Math.max(0, savedCents);
+    const nextWeek = saved.week + 1;
     setSaved((s) => ({
       ...s,
       bankedCents: s.bankedCents + amount,
       history: [...s.history, { week: s.week, savedCents: amount }],
       week: s.week + 1,
+      planDay: todayIndex(),
     }));
-    toast.show(`Banked ${money(amount)}`);
+    toast.show(`Banked ${money(amount)}. Week ${nextWeek} is planned.`);
+    const seed = Math.floor(Math.random() * 1_000_000);
+    api.plan(profile, saved.useSample, seed, plan?.days).then(
+      (response) => applyPlan(response, profile, saved.useSample),
+      () => toast.show(`Banked ${money(amount)}. Keeping this week's meals.`),
+    );
+  }
+
+  /** Spend the goal amount; leftover savings carry over toward the next one. */
+  function claim(goal: FunGoal) {
+    setSaved((s) => ({
+      ...s,
+      bankedCents: Math.max(0, s.bankedCents - goal.cost_cents),
+      claimed: [...s.claimed, { name: goal.name, costCents: goal.cost_cents, week: s.week }],
+    }));
+    toast.show("Enjoy it. Leftover savings now go toward the next one.");
   }
 
   function cook(meal: QuickMeal, goalName: string) {
@@ -296,6 +316,7 @@ export function App() {
           bankedCents={saved.bankedCents}
           weeklySavedCents={data.money.saved_cents}
           history={saved.history}
+          claimed={saved.claimed}
           cookedInstead={saved.cookedInstead}
           cookedSavedCents={saved.cookedSavedCents}
           storeName={data.price_source.store}
@@ -303,6 +324,10 @@ export function App() {
             setSaved((s) => (s.profile ? { ...s, profile: { ...s.profile, funGoalId: id } } : s));
             const name = cat.fun_goals.find((g) => g.id === id)?.name ?? "";
             toast.show(`Now saving for ${name}`);
+          }}
+          onReset={() => {
+            setSaved(resetProgress);
+            toast.show("Progress reset. You're back to week 1.");
           }}
           onEditProfile={() => {
             setBuildError(null);
@@ -325,6 +350,7 @@ export function App() {
           todayProteinG={dayProtein(plan.days[todayIndex()], mealsById)}
           onQuickMeal={() => setQuickOpen(true)}
           onBank={() => bank(data.money.saved_cents)}
+          onClaim={() => claim(funGoal)}
         />
         {quickOpen && (
           <QuickMealSheet
